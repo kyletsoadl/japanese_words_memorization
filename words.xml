@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllLessons>
+<L7>
+	  <word>
+        <chinese>剪，切</chinese>
+        <hiragana>きります</hiragana>
+        <kanji>切ります</kanji>
+        <katakana> </katakana>
+        <option>切る</option>
+    </word>
+    <word>
+        <chinese>寄，送</chinese>
+        <hiragana>おくります</hiragana>
+        <kanji>送ります</kanji>
+        <katakana> </katakana>
+        <option>送る</option>
+    </word>
+    <word>
+        <chinese>給，送給</chinese>
+        <hiragana>あげます</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>あげる</option>
+    </word>
+    <word>
+        <chinese>接受，得到</chinese>
+        <hiragana>もらいます</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>もらう</option>
+    </word>
+    <word>
+        <chinese>借(出)</chinese>
+        <hiragana>かします</hiragana>
+        <kanji>貸します</kanji>
+        <katakana> </katakana>
+        <option>貸す</option>
+    </word>
+    <word>
+        <chinese>借(入)</chinese>
+        <hiragana>かります</hiragana>
+        <kanji>借ります</kanji>
+        <katakana> </katakana>
+        <option>借りる</option>
+    </word>
+    <word>
+        <chinese>教，告訴</chinese>
+        <hiragana>おしえます</hiragana>
+        <kanji>教えます</kanji>
+        <katakana> </katakana>
+        <option>教える</option>
+    </word>
+    <word>
+        <chinese>學習</chinese>
+        <hiragana>ならいます</hiragana>
+        <kanji>習います</kanji>
+        <katakana> </katakana>
+        <option>習う</option>
+    </word>
+    <word>
+        <chinese>打(電話)</chinese>
+        <hiragana>（でんわを）かけます</hiragana>
+        <kanji>（電話を）かけます</kanji>
+        <katakana> </katakana>
+        <option>かける</option>
+    </word>
+    <word>
+        <chinese>手</chinese>
+        <hiragana>て</hiragana>
+        <kanji>手</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>筷子</chinese>
+        <hiragana>はし</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>湯匙</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>スプーン</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>小刀</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ナイフ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>叉子</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>フォーク</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>剪刀</chinese>
+        <hiragana>はさみ</hiragana>
+        <kanji>　</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>傳真</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ファクス</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>文字處理器</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ワープロ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>個人電腦，PC</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>パソコン</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>打孔機</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>パンチ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>釘書機</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ホッチキス</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>透明膠帶</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>セロテープ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>橡皮擦</chinese>
+        <hiragana>けしゴム</hiragana>
+        <kanji>消しゴム</kanji>
+        <katakana>消しゴム</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>紙</chinese>
+        <hiragana>かみ</hiragana>
+        <kanji>紙</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>花</chinese>
+        <hiragana>はな</hiragana>
+        <kanji>花</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>襯衫</chinese>
+        <hiragana>　</hiragana>
+        <kanji>　</kanji>
+        <katakana>シャツ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>禮物</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>プレゼント</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>行李，包裹</chinese>
+        <hiragana>にもつ</hiragana>
+        <kanji>荷物</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>錢</chinese>
+        <hiragana>おかね</hiragana>
+        <kanji>お金</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>票</chinese>
+        <hiragana>きっぷ</hiragana>
+        <kanji>切符</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>聖誕節</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>クリスマス</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>家父</chinese>
+        <hiragana>ちち</hiragana>
+        <kanji>父</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>家母</chinese>
+        <hiragana>はは</hiragana>
+        <kanji>母</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(別人的)父親，令尊</chinese>
+        <hiragana>おとうさん</hiragana>
+        <kanji>お父さん</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(別人的)母親，令堂</chinese>
+        <hiragana>おかあさん</hiragana>
+        <kanji>お母さん</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>已經</chinese>
+        <hiragana>もう</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>尚未，還沒有</chinese>
+        <hiragana>まだ</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>從現在起，這就</chinese>
+        <hiragana>これから</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>[~]，好棒呦!</chinese>
+        <hiragana>[～、]　すてきですね。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>對不起。/有人在家嗎?/我能進來嗎? (去別人家時用)</chinese>
+        <hiragana>ごめんください。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>歡迎。(歡迎訪客的寒喧)</chinese>
+        <hiragana>いらっしゃい。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>請進</chinese>
+        <hiragana>どうぞ　おあがりください。</hiragana>
+        <kanji>どうぞ　お上がりください。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>對不起。/打擾了。</chinese>
+        <hiragana>しつれいします。</hiragana>
+        <kanji>失礼します。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>你覺得[~]怎麼樣? (推薦某物給他人時用)</chinese>
+        <hiragana>[～は]　いかがですか。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>謝謝。/我不客氣了。 (用在吃、喝之前)</chinese>
+        <hiragana>いただきます。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>旅行 (～を　します：去旅行)</chinese>
+        <hiragana>りょこう</hiragana>
+        <kanji>旅行</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>土產，紀念品</chinese>
+        <hiragana>おみやげ</hiragana>
+        <kanji>お土産</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>歐洲</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ヨーロッパ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>西班牙</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>スペイン</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>家兄</chinese>
+        <hiragana>あに</hiragana>
+        <kanji>兄</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>家姊</chinese>
+        <hiragana>あね</hiragana>
+        <kanji>姉</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>舍弟</chinese>
+        <hiragana>おとうと</hiragana>
+        <kanji>弟</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>舍妹</chinese>
+        <hiragana>いもうと</hiragana>
+        <kanji>妹</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>(在家)父親</chinese>
+        <hiragana>おとうさん</hiragana>
+        <kanji>お父さん</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>(在家)母親</chinese>
+        <hiragana>おかあさん</hiragana>
+        <kanji>お母さん</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>(在家)哥哥</chinese>
+        <hiragana>おにいさん</hiragana>
+        <kanji>お兄さん</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>(在家)姊姊</chinese>
+        <hiragana>おねえさん</hiragana>
+        <kanji>お姉さん</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>(在家)弟弟</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>(直接叫名字)(補充)</option>
+    </word>
+    <word>
+        <chinese>(在家)妹妹</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>(直接叫名字)(補充)</option>
+    </word>
+    <word>
+        <chinese>(別人的)哥哥</chinese>
+        <hiragana>おにいさん</hiragana>
+        <kanji>お兄さん</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>(別人的)姊姊</chinese>
+        <hiragana>おねえさん</hiragana>
+        <kanji>お姉さん</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>(別人的)弟弟</chinese>
+        <hiragana>おとうとさん</hiragana>
+        <kanji>弟さん</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>(別人的)妹妹</chinese>
+        <hiragana>いもうとさん</hiragana>
+        <kanji>妹さん</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+</L7>
+<L8>
+	  <word>
+		  <chinese>英俊的</chinese>
+		  <hiragana> </hiragana>
+		  <kanji> </kanji>
+		  <katakana>ハンサム　[な]</katakana>
+      <option> </option>
+	  </word>
+    <word>
+        <chinese>美麗的，乾淨的</chinese>
+        <hiragana>きれい　[な]</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>安靜的</chinese>
+        <hiragana>しずか　[な]</hiragana>
+        <kanji>静か　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>熱鬧的</chinese>
+        <hiragana>にぎやか　[な]</hiragana>
+        <kanji>賑やか　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>有名的</chinese>
+        <hiragana>ゆうめい　[な]</hiragana>
+        <kanji>有名　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>親切的</chinese>
+        <hiragana>しんせつ　[な]</hiragana>
+        <kanji>親切　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>身體好的，健康的</chinese>
+        <hiragana>げんき　[な]</hiragana>
+        <kanji>元気　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>空閒的</chinese>
+        <hiragana>ひま　[な]</hiragana>
+        <kanji>暇　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>方便的</chinese>
+        <hiragana>べんり　[な]</hiragana>
+        <kanji>便利　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>很好的，很棒的</chinese>
+        <hiragana>すてき　[な]</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>大的</chinese>
+        <hiragana>おおきい</hiragana>
+        <kanji>大きい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>小的</chinese>
+        <hiragana>ちいさい</hiragana>
+        <kanji>小さい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>新的</chinese>
+        <hiragana>あたらしい</hiragana>
+        <kanji>新しい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>舊的</chinese>
+        <hiragana>ふるい</hiragana>
+        <kanji>古い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>好的</chinese>
+        <hiragana>いい　(よい)</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>壞的</chinese>
+        <hiragana>わるい</hiragana>
+        <kanji>悪い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>熱的</chinese>
+        <hiragana>あつい</hiragana>
+        <kanji>暑い、熱い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>寒冷的</chinese>
+        <hiragana>さむい</hiragana>
+        <kanji>寒い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>冷的</chinese>
+        <hiragana>つめたい</hiragana>
+        <kanji>冷たい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>難的</chinese>
+        <hiragana>むずかしい</hiragana>
+        <kanji>難しい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>簡單的</chinese>
+        <hiragana>やさしい</hiragana>
+        <kanji>易しい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>高的，貴的</chinese>
+        <hiragana>たかい</hiragana>
+        <kanji>高い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>便宜的</chinese>
+        <hiragana>やすい</hiragana>
+        <kanji>安い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>低的，矮的</chinese>
+        <hiragana>ひくい</hiragana>
+        <kanji>低い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>有趣的，有意思的</chinese>
+        <hiragana>おもしろい</hiragana>
+        <kanji>面白い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>美味的，好吃的</chinese>
+        <hiragana>おいしい</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>忙碌的</chinese>
+        <hiragana>いそがしい</hiragana>
+        <kanji>忙しい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>愉快的，高興的</chinese>
+        <hiragana>たのしい</hiragana>
+        <kanji>楽しい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>白色的</chinese>
+        <hiragana>しろい</hiragana>
+        <kanji>白い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>黑色的</chinese>
+        <hiragana>くろい</hiragana>
+        <kanji>黒い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>紅色的</chinese>
+        <hiragana>あかい</hiragana>
+        <kanji>赤い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>藍色的</chinese>
+        <hiragana>あおい</hiragana>
+        <kanji>青い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>櫻花</chinese>
+        <hiragana>さくら</hiragana>
+        <kanji>桜</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>山</chinese>
+        <hiragana>やま</hiragana>
+        <kanji>山</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>城市，城鎮</chinese>
+        <hiragana>まち</hiragana>
+        <kanji>町</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>食物</chinese>
+        <hiragana>たべもの</hiragana>
+        <kanji>食べ物</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>汽車</chinese>
+        <hiragana>くるま</hiragana>
+        <kanji>車</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>場所，地方</chinese>
+        <hiragana>ところ</hiragana>
+        <kanji>所</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>宿舍</chinese>
+        <hiragana>りょう</hiragana>
+        <kanji>寮</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>學習，用功</chinese>
+        <hiragana>べんきょう</hiragana>
+        <kanji>勉強</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>生活</chinese>
+        <hiragana>せいかつ</hiragana>
+        <kanji>生活</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>工作，職業</chinese>
+        <hiragana>[お] しごと</hiragana>
+        <kanji>[お] 仕事</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>怎麼樣</chinese>
+        <hiragana>どう</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>什麼樣的~</chinese>
+        <hiragana>どんな～</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>哪個</chinese>
+        <hiragana>どれ</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>很，非常</chinese>
+        <hiragana>とても</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>不太 (用於否定句)</chinese>
+        <hiragana>あまり</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>而且，還有 (用於接續句子)</chinese>
+        <hiragana>そして</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>~，但是~</chinese>
+        <hiragana>～が、～</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>你好嗎?</chinese>
+        <hiragana>おげんきですか。</hiragana>
+        <kanji>お元気ですか。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>是呀；(用於思考回答時)</chinese>
+        <hiragana>そうですね。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>你習慣日本的生活了嗎?</chinese>
+        <hiragana>にほんの　せいかつに　なれましたか。</hiragana>
+        <kanji>日本の　生活に　慣れましたか。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>再來一杯 [~] 怎麼樣。</chinese>
+        <hiragana>[～、]　もう　いっぱい　いかがですか。</hiragana>
+        <kanji>[～、] もう　一杯　いかがですか。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>已經~了吧 (不是嗎?)</chinese>
+        <hiragana>もう　～です　[ね]。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>我該告辭了。</chinese>
+        <hiragana>そろそろ　しつれいします。</hiragana>
+        <kanji>そろそろ　失礼します。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>歡迎再來。</chinese>
+        <hiragana>また　いらっしゃって　ください。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>富士山</chinese>
+        <hiragana>ふじさん</hiragana>
+        <kanji>富士山</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>琵琶湖</chinese>
+        <hiragana>びわこ</hiragana>
+        <kanji>琵琶湖</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>上海</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>シャンハイ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>"七名武士"</chinese>
+        <hiragana>「しちにんのさむらい」</hiragana>
+        <kanji>「七人の侍」</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>金閣寺</chinese>
+        <hiragana>きんかくじ</hiragana>
+        <kanji>金閣寺</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+</L8>
+<L9>
+	  <word>
+		    <chinese>了解，明白，懂</chinese>
+		    <hiragana>わかります</hiragana>
+		    <kanji> </kanji>
+		    <katakana> </katakana>
+        <option>わかる</option>
+	  </word>
+    <word>
+        <chinese>有</chinese>
+        <hiragana>あります</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>ある</option>
+    </word>
+    <word>
+        <chinese>喜歡的，愛好的</chinese>
+        <hiragana>すき　[な]</hiragana>
+        <kanji>好き　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>好的，高明的</chinese>
+        <hiragana>じょうず　[な]</hiragana>
+        <kanji>上手　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>不行的，笨拙的</chinese>
+        <hiragana>へた　[な]</hiragana>
+        <kanji>下手　[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>料理，菜</chinese>
+        <hiragana>りょうり</hiragana>
+        <kanji>料理</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>飲料</chinese>
+        <hiragana>のみもの</hiragana>
+        <kanji>飲み物</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>運動，體育 (～を します：做運動)</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>スポーツ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>棒球 (～を　します：打棒球)</chinese>
+        <hiragana>やきゅう</hiragana>
+        <kanji>野球</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>跳舞，舞蹈 (～を　します：跳舞)</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ダンス</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>音樂</chinese>
+        <hiragana>おんがく</hiragana>
+        <kanji>音楽</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>歌曲</chinese>
+        <hiragana>うた</hiragana>
+        <kanji>歌</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>古典音樂</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>クラシック</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>爵士樂</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ジャズ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>音樂會，演奏會</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>コンサート</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>卡拉OK</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>カラオケ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>歌舞伎</chinese>
+        <hiragana>かぶき</hiragana>
+        <kanji>歌舞伎</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>畫</chinese>
+        <hiragana>え</hiragana>
+        <kanji>絵</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>字</chinese>
+        <hiragana>じ</hiragana>
+        <kanji>字</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>漢字</chinese>
+        <hiragana>かんじ</hiragana>
+        <kanji>漢字</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>平假名</chinese>
+        <hiragana>ひらがな</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>片假名</chinese>
+        <hiragana>かたかな</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>羅馬拼音</chinese>
+        <hiragana>ローマじ</hiragana>
+        <kanji>ローマ字</kanji>
+        <katakana>ローマじ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>零錢</chinese>
+        <hiragana>こまかい　おかね</hiragana>
+        <kanji>細かい　お金</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>票</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>チケット</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>時間</chinese>
+        <hiragana>じかん</hiragana>
+        <kanji>時間</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(必須辦的) 事情，工作</chinese>
+        <hiragana>ようじ</hiragana>
+        <kanji>用事</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>約定，承諾</chinese>
+        <hiragana>やくそく</hiragana>
+        <kanji>約束</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(別人的)丈夫</chinese>
+        <hiragana>ごしゅじん</hiragana>
+        <kanji>ご主人</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(自己的)丈夫</chinese>
+        <hiragana>おっと/しゅじん</hiragana>
+        <kanji>夫/主人</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(別人的)妻子</chinese>
+        <hiragana>おくさん</hiragana>
+        <kanji>奥さん</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(自己的)妻子</chinese>
+        <hiragana>つま/かない</hiragana>
+        <kanji>妻/家内</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>小孩</chinese>
+        <hiragana>こども</hiragana>
+        <kanji>子供</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>很，十分(副詞)</chinese>
+        <hiragana>よく</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>大致，大概</chinese>
+        <hiragana>だいたい</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>很多</chinese>
+        <hiragana>たくさん</hiragana>
+        <kanji>沢山</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>少，稍微</chinese>
+        <hiragana>すこし</hiragana>
+        <kanji>少し</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>完全，一點也 (用於否定句)</chinese>
+        <hiragana>ぜんぜん</hiragana>
+        <kanji>全然</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>早些，快些</chinese>
+        <hiragana>はやく</hiragana>
+        <kanji>早く、速く</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>因為~</chinese>
+        <hiragana>～から</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>為什麼</chinese>
+        <hiragana>どうして</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>真遺憾 (呀)。</chinese>
+        <hiragana> ざんねんです　[ね]。</hiragana>
+        <kanji>残念です　[ね]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>很抱歉</chinese>
+        <hiragana>すみません</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>喂 (用於打電話時)</chinese>
+        <hiragana>もしもし</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>啊</chinese>
+        <hiragana>ああ</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>一起來如何?</chinese>
+        <hiragana>いっしょに　いかがですか。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>[~] 稍微有點困難 (拒絕的表達)。</chinese>
+        <hiragana>[～は]　ちょっと...。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>不行嗎?</chinese>
+        <hiragana>だめですか。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>下次請再叫我。(用於考慮對方處境，婉轉拒絕對方的邀請)</chinese>
+        <hiragana>また　こんど　おねがいします。</hiragana>
+        <kanji>また　今度　お願いします。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(日本指揮家)</chinese>
+        <hiragana>おざわせいじ</hiragana>
+        <kanji>小沢征爾</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+</L9>
+<L10>
+    <word>
+        <chinese>有，在 (表示生物的存在)</chinese>
+        <hiragana>います</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>いる</option>
+    </word>
+    <word>
+        <chinese>有，在 (表示無生物的存在)</chinese>
+        <hiragana>あります</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>ある</option>
+    </word>
+	  <word>
+		    <chinese>各式各樣的</chinese>
+		    <hiragana>いろいろ [な]</hiragana>
+		    <kanji> </kanji>
+		    <katakana> </katakana>
+        <option> </option>
+	  </word>
+    <word>
+        <chinese>男子</chinese>
+        <hiragana>おとこの　ひと</hiragana>
+        <kanji>男の　人</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>女子</chinese>
+        <hiragana>おんなの　ひと</hiragana>
+        <kanji>女の人</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>男孩</chinese>
+        <hiragana>おとこの　こ</hiragana>
+        <kanji>男の　子</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>女孩</chinese>
+        <hiragana>おんなの　こ</hiragana>
+        <kanji>女の　子</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>狗</chinese>
+        <hiragana>いぬ</hiragana>
+        <kanji>犬</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>貓</chinese>
+        <hiragana>ねこ</hiragana>
+        <kanji>猫</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>樹，木頭</chinese>
+        <hiragana>き</hiragana>
+        <kanji>木</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>物品，東西</chinese>
+        <hiragana>もの</hiragana>
+        <kanji>物</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>底片，膠卷</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>フィルム</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>電池</chinese>
+        <hiragana>でんち</hiragana>
+        <kanji>電池</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>盒子</chinese>
+        <hiragana>はこ</hiragana>
+        <kanji>箱</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>開關</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>スイッチ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>冰箱</chinese>
+        <hiragana>れいぞうこ</hiragana>
+        <kanji>冷蔵庫</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>餐桌</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>テーブル</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>床</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ベッド</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>架子</chinese>
+        <hiragana>たな</hiragana>
+        <kanji>棚</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>門</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ドア</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>窗戶</chinese>
+        <hiragana>まど</hiragana>
+        <kanji>窓</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>郵筒，信箱</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ポスト</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>大廈</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ビル</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>公園</chinese>
+        <hiragana>こうえん</hiragana>
+        <kanji>公園</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>咖啡館</chinese>
+        <hiragana>きっさてん</hiragana>
+        <kanji>喫茶店</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>書店</chinese>
+        <hiragana>ほんや</hiragana>
+        <kanji>本屋</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>~店</chinese>
+        <hiragana>～や</hiragana>
+        <kanji>～屋</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>搭乘火車，計程車等交通工具的場所</chinese>
+        <hiragana>のりば</hiragana>
+        <kanji>乗り場</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>縣</chinese>
+        <hiragana>けん</hiragana>
+        <kanji>県</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>上，上面</chinese>
+        <hiragana>うえ</hiragana>
+        <kanji>上</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>下，下面</chinese>
+        <hiragana>した</hiragana>
+        <kanji>下</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>前，前面</chinese>
+        <hiragana>まえ</hiragana>
+        <kanji>前</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>後，後面</chinese>
+        <hiragana>うしと</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>右(邊)</chinese>
+        <hiragana>みぎ</hiragana>
+        <kanji>右</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>左(邊)</chinese>
+        <hiragana>ひだり</hiragana>
+        <kanji>左</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>裡面</chinese>
+        <hiragana>なか</hiragana>
+        <kanji>中</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>外面</chinese>
+        <hiragana>そと</hiragana>
+        <kanji>外</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>隔壁，旁邊</chinese>
+        <hiragana>となり</hiragana>
+        <kanji>隣</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>附近</chinese>
+        <hiragana>ちかく</hiragana>
+        <kanji>近く</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>之間，中間</chinese>
+        <hiragana>あいだ</hiragana>
+        <kanji>間</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>~啦~ [等]</chinese>
+        <hiragana>～や　～　[など]</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>最~</chinese>
+        <hiragana>いちばん　～</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>(いちばん　うえ：最上面，最高)</option>
+    </word>
+    <word>
+        <chinese>第...層 (架子的第...層)</chinese>
+        <hiragana>...だんめ</hiragana>
+        <kanji>...段目</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>謝謝。非常不好意思</chinese>
+        <hiragana>[どうも]　すみません。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>辣醬</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>チリソース</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>裡面 (深處)</chinese>
+        <hiragana>おく</hiragana>
+        <kanji>奥</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>香辛料區</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>スパイス‧コーナー</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>東京迪士尼樂園</chinese>
+        <hiragana>とうきょうディズニーランド</hiragana>
+        <kanji>東京ディズニーリゾート</kanji>
+        <katakana>東京ディズニーリゾート</katakana>
+        <option> </option>
+    </word>
+</L10>
+<L11>
+    <word>
+        <chinese>有 [孩子]</chinese>
+        <hiragana>[こどもが～]　います</hiragana>
+        <kanji>[子供が～]　います</kanji>
+        <katakana> </katakana>
+        <option>いる</option>
+    </word>
+    <word>
+        <chinese>在 [日本]</chinese>
+        <hiragana>[にほんに～]　います</hiragana>
+        <kanji>[日本に～]　います</kanji>
+        <katakana> </katakana>
+        <option>いる</option>
+    </word>
+    <word>
+		    <chinese>花費(金錢或時間)</chinese>
+		    <hiragana>かかります</hiragana>
+		    <kanji> </kanji>
+		    <katakana> </katakana>
+        <option> </option>
+	  </word>
+    <word>
+        <chinese>向 [公司] 請假</chinese>
+        <hiragana>[かいしゃを～]　やすみます</hiragana>
+        <kanji>[会社を～]　休みます</kanji>
+        <katakana> </katakana>
+        <option>休む</option>
+    </word>
+    <word>
+        <chinese>一個 (用於計算物品)</chinese>
+        <hiragana>ひとつ</hiragana>
+        <kanji>１つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>二個</chinese>
+        <hiragana>ふたつ</hiragana>
+        <kanji>２つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>三個</chinese>
+        <hiragana>みっつ</hiragana>
+        <kanji>３つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>四個</chinese>
+        <hiragana>よっつ</hiragana>
+        <kanji>４つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>五個</chinese>
+        <hiragana>いつつ</hiragana>
+        <kanji>５つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>六個</chinese>
+        <hiragana>むっつ</hiragana>
+        <kanji>６つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>七個</chinese>
+        <hiragana>ななつ</hiragana>
+        <kanji>７つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>八個</chinese>
+        <hiragana>やっつ</hiragana>
+        <kanji>８つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>九個</chinese>
+        <hiragana>ここのつ</hiragana>
+        <kanji>９つ</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>十個</chinese>
+        <hiragana>とお</hiragana>
+        <kanji>１０</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>幾個</chinese>
+        <hiragana>いくつ</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>一個人</chinese>
+        <hiragana>ひとり</hiragana>
+        <kanji>１人</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>二個人</chinese>
+        <hiragana>ふたり</hiragana>
+        <kanji>２人</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>...個人</chinese>
+        <hiragana>...にん</hiragana>
+        <kanji>...人</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(用於計算機械，車輛等機械類時)</chinese>
+        <hiragana>...だい</hiragana>
+        <kanji>...台</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(用於計算紙張，郵票等薄的物品時)</chinese>
+        <hiragana>...まい</hiragana>
+        <kanji>...枚</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>...次</chinese>
+        <hiragana>...かい</hiragana>
+        <kanji>...回</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>蘋果</chinese>
+        <hiragana>りんご</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>三明治</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>サンドイッチ</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>咖哩 [飯]</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>カレー　[ライス]</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>冰淇淋</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>アイスクリーム</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>郵票</chinese>
+        <hiragana>きって</hiragana>
+        <kanji>切手</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>明信片</chinese>
+        <hiragana>はがき</hiragana>
+        <kanji>葉書</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>信封</chinese>
+        <hiragana>ふうとう</hiragana>
+        <kanji>封筒</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>限時信</chinese>
+        <hiragana>そくたつ</hiragana>
+        <kanji>速達</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>掛號信</chinese>
+        <hiragana>かきとめ</hiragana>
+        <kanji>書留</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>航空郵件，航空信</chinese>
+        <hiragana>(こうくうびん)</hiragana>
+        <kanji>(航空便)</kanji>
+        <katakana>エアメール</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>船運</chinese>
+        <hiragana>ふなびん</hiragana>
+        <kanji>船便</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>雙親</chinese>
+        <hiragana>りょうしん</hiragana>
+        <kanji>両親</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+</L11>
+</AllLessons>

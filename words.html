@@ -1,0 +1,303 @@
+<html>
+<script>
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET", "words.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+
+//var x = xmlDoc.getElementsByTagName("word");
+//var lessonCollectionAll;
+var wordCollectionAll = new Array();
+
+var words = new Array();
+
+var iter;
+
+var txtQuestion;
+
+var txtAnswer;
+
+var txtListAll;
+
+document.getElementById("loadStatus").style.visibility = "hidden";
+
+function checkAll(field)
+{
+	for (i = 0; i < field.length; i++)
+	{
+		field[i].checked = true;
+	}
+}
+
+function uncheckAll(field)
+{
+	for (i = 0; i < field.length; i++)
+	{
+		field[i].checked = false;
+	}
+}
+
+function loadXML()
+{
+	//        var words = new Array();
+
+	/*        xmlhttp = new XMLHttpRequest();
+			  xmlhttp.open("GET", "words.xml", false);
+			  xmlhttp.send();
+			  xmlDoc = xmlhttp.responseXML;
+
+			  var x = xmlDoc.getElementsByTagName("word");
+	 */
+
+	wordCollectionAll.length = 0;
+	//alert(2);
+	if (document.getElementById("cb_L7").checked)
+	{
+		//		alert(1);
+		//		wordCollectionAll = xmlDoc.getElementsByTagName("L7")[0].getElementsByTagName("word");
+		var wordL7 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L7 word'));
+		wordCollectionAll = wordCollectionAll.concat(wordL7);
+		//	alert(lessonCollectionAll);
+		//alert(1);
+	}
+	if (document.getElementById("cb_L8").checked)
+	{
+		var wordL8 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L8 word'));
+		wordCollectionAll = wordCollectionAll.concat(wordL8);
+
+		//lessonCollectionAll += xmlDoc.getElementsByTagName("L8");
+		//		alert(1);
+	}
+	if (document.getElementById("cb_L9").checked)
+	{
+		var wordL9 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L9 word'));
+		wordCollectionAll = wordCollectionAll.concat(wordL9);
+	}
+	if (document.getElementById("cb_L10").checked)
+	{
+		var wordL10 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L10 word'));
+		wordCollectionAll = wordCollectionAll.concat(wordL10);
+
+	}
+	if (document.getElementById("cb_L11").checked)
+	{
+		var wordL11 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L11 word'));
+		wordCollectionAll = wordCollectionAll.concat(wordL11);
+
+	}
+
+	iter = wordCollectionAll.length;
+
+	/*
+	   alert(wordCollectionAll[0].getElementsByTagName("chinese")[0].childNodes[0].nodeValue);
+	   alert(wordCollectionAll[1].getElementsByTagName("chinese")[0].childNodes[0].nodeValue);
+	   alert(wordCollectionAll[2].getElementsByTagName("chinese")[0].childNodes[0].nodeValue);
+	 */
+
+	//	var txt = "";
+	//	for (i = 0; i < wordCollectionAll.length; i++)
+	//	{
+	//		alert(2);
+	//		txt += wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
+	//	alert(3);
+	//		txt += "<br>";
+	//	}
+	//	document.getElementById("myDiv").innerHTML = txt;
+
+
+	for (i = 0; i < wordCollectionAll.length; i++)
+	{
+		words[i] = new Array(5);
+	}
+
+	for (i = 0; i < wordCollectionAll.length; i++)
+	{
+		words[i][0] = wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
+		words[i][1] = wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes[0].nodeValue;
+		words[i][2] = wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes[0].nodeValue;
+		words[i][3] = wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
+		words[i][4] = wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
+	}
+/*
+	var txt = "";
+	txt += "<table border='1'>";
+	txt += "<tr><td>中文</td><td>hiragana</td><td>kanji</td><td>katakana</td><td>option</td></tr>";
+
+	for (i = 0; i < wordCollectionAll.length; i++)
+	{
+		txt += "<tr><td>";
+		txt += words[i][0];
+		txt += "</td><td>";
+		txt += words[i][1];
+		txt += "</td><td>";
+		txt += words[i][2];
+		txt += "</td><td>";
+		txt += words[i][3];
+		txt += "</td><td>";
+		txt += words[i][4];
+		txt += "</td></tr>";
+	}	
+
+	txt += "</table>";
+*/
+	//	document.getElementById("myDiv").innerHTML = txt;
+
+	document.getElementById("loadStatus").style.visibility = "visible";
+
+}
+</script>
+
+<body>
+<script>
+var rn;
+
+function nextWord()
+{
+	//alert(iter);
+	document.getElementById("myDiv3").style.visibility = "hidden";
+	document.getElementById("loadStatus").style.visibility = "hidden";
+
+	if (iter == 0)
+	{
+		iter = wordCollectionAll.length;	
+	}
+	/*
+	   var txt2 = "";
+	   txt2 += "<table border='1'>";
+	   txt2 += "<tr><td>中文</td><td>hiragana</td><td>kanji</td><td>katakana</td></tr>";
+
+	   var rn;
+	   rn = Math.floor(Math.random() * iter);
+	   txt2 += "<tr><td>";
+	   txt2 += words[rn][0];
+	   txt2 += "</td><td>";
+	   txt2 += words[rn][1];
+	   txt2 += "</td><td>";
+	   txt2 += words[rn][2];
+	   txt2 += "</td><td>";
+	   txt2 += words[rn][3];
+	   txt2 += "</td></tr>";
+
+	   txt2 += "</table>";
+	 */
+	txtQuestion = "";	
+	rn = Math.floor(Math.random() * iter);
+	txtQuestion += words[rn][0];
+
+	document.getElementById("myDiv2").innerHTML = txtQuestion;
+
+	var tempArray = new Array(5);
+	for (i = 0; i < 5; i++)
+	{
+		tempArray[i] = words[rn][i];
+		words[rn][i] = words[iter - 1][i];
+		words[iter - 1][i] = tempArray[i];
+	}
+
+	iter--;
+
+	if (iter == 0)
+	{
+		document.getElementById("nextButton").value = "Restart";
+	}
+	else
+	{
+		document.getElementById("nextButton").value = "Next";
+	}
+
+}
+
+function answer()
+{
+	txtAnswer = "";
+	txtAnswer += "<table border='1'>";
+	txtAnswer += "<tr><td>平假名</td><td>漢字</td><td>片假名</td><td>其他</td></tr>";
+	txtAnswer += "<tr><td>";
+	txtAnswer += words[iter][1];
+	txtAnswer += "</td><td>";
+	txtAnswer += words[iter][2];
+	txtAnswer += "</td><td>";
+	txtAnswer += words[iter][3];
+	txtAnswer += "</td><td>";
+	txtAnswer += words[iter][4];
+	txtAnswer += "</td></tr>";
+
+	txtAnswer += "</table>";
+
+	document.getElementById("myDiv3").innerHTML = txtAnswer;
+	document.getElementById("myDiv3").style.visibility = "visible";
+
+}
+
+function listAll()
+{
+	txtListAll = "";
+	txtListAll += "<table border='1'>";
+	txtListAll += "<tr><td>中文</td><td>hiragana</td><td>kanji</td><td>katakana</td><td>option</td></tr>";
+
+	for (i = 0; i < wordCollectionAll.length; i++)
+	{
+		txtListAll += "<tr><td>";
+		txtListAll += wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
+		txtListAll += "</td><td>";
+		txtListAll += wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes[0].nodeValue;
+		txtListAll += "</td><td>";
+		txtListAll += wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes[0].nodeValue;
+		txtListAll += "</td><td>";
+		txtListAll += wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
+		txtListAll += "</td><td>";
+		txtListAll += wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
+		txtListAll += "</td></tr>";
+	}
+
+	txtListAll += "</table>";
+
+	document.getElementById("myDiv4").innerHTML = txtListAll;
+	document.getElementById("myDiv4").style.visibility = "visible";
+	document.getElementById("myDiv4").style.display = "inline";
+}
+
+function closeList()
+{
+	document.getElementById("myDiv4").style.display = "none";
+}
+
+</script>
+
+<input type = "button" value = "Check All" onclick = "checkAll(document.formCheckbox.check)"></input>
+<input type = "button" value = "Uncheck All" onclick = "uncheckAll(document.formCheckbox.check)"></input>
+
+<form name = "formCheckbox">
+<input type = "checkbox" id = "cb_L7" name = "check" value = "L7">L7</input>
+<input type = "checkbox" id = "cb_L8" name = "check" value = "L8">L8</input>
+<input type = "checkbox" id = "cb_L9" name = "check" value = "L9">L9</input>
+<input type = "checkbox" id = "cb_L10" name = "check" value = "L10">L10</input>
+<input type = "checkbox" id = "cb_L11" name = "check" value = "L11">L11(~No.34)</input><br>
+</form>
+<input type = "button" value = "Load" onclick = "loadXML()"></input>
+<div id = "loadStatus" style = "visibility:hidden">Loading Complete</div>
+<br />
+<hr />
+
+<div id = "myDiv"></div>
+<div id = "myDiv2"></div>
+<br />
+<div id = "myDiv3"></div>
+<input type = "button" id = "nextButton" value = "Next Word" onclick = "nextWord()"></input>
+<input type = "button" id = "showAnswer" value = "Show Answer" onclick = "answer()"></input>
+<br />
+<hr />
+<br />
+<input type = "button" id = "listAll" value = "List All Words" onclick = "listAll()"></input>
+<input type = "button" id = "closeList" value = "Close List" onclick = "closeList()"></input>
+<br>
+<div id = "myDiv4"></div>
+
+<hr />
+<footer>
+	<p>Edited by: kyletso</p>
+	<p>Contact information: <a href="mailto:kyletso@gmail.com">kyletso@gmail.com</a>.</p>
+</footer>
+</body>
+
+</html>
