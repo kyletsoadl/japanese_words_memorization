@@ -1,4 +1,71 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- 
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+	-->
+
+    <title>Japanese Words Memorization Helper</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body role = "document">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap theme</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
 <script>
 xmlhttp = new XMLHttpRequest();
 xmlhttp.open("GET", "words.xml", false);
@@ -84,10 +151,7 @@ function loadXML()
 	document.getElementById("loadStatus").style.visibility = "visible";
 
 }
-</script>
 
-<body>
-<script>
 var rn;
 
 function nextWord()
@@ -201,40 +265,99 @@ document.onkeydown = function(event)
 
 </script>
 
-<input type = "button" value = "Check All" onclick = "checkAll(document.formCheckbox.check)"></input>
-<input type = "button" value = "Uncheck All" onclick = "uncheckAll(document.formCheckbox.check)"></input>
+    <div class="container theme-showcase" role="main">
 
-<form name = "formCheckbox">
-<input type = "checkbox" id = "cb_L7" name = "check" value = "L7">L7</input>
-<input type = "checkbox" id = "cb_L8" name = "check" value = "L8">L8</input>
-<input type = "checkbox" id = "cb_L9" name = "check" value = "L9">L9</input>
-<input type = "checkbox" id = "cb_L10" name = "check" value = "L10">L10</input>
-<input type = "checkbox" id = "cb_L11" name = "check" value = "L11">L11(~No.34)</input><br>
-</form>
-<input type = "button" value = "Load" onclick = "loadXML()"></input>
-<div id = "loadStatus" style = "visibility:hidden">Loading Complete</div>
-<br />
-<hr />
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+      </div>
 
-<div id = "myDiv"></div>
-<div id = "myDiv2"></div>
-<br />
-<div id = "myDiv3"></div>
-<input type = "button" id = "nextButton" value = "Next Word (RightArrow)" onclick = "nextWord()"></input>
-<input type = "button" id = "showAnswer" value = "Show Answer (DownArrow)" onclick = "answer()"></input>
-<br />
-<hr />
-<br />
-<input type = "button" id = "listAll" value = "List All Words" onclick = "listAll()"></input>
-<input type = "button" id = "closeList" value = "Close List" onclick = "closeList()"></input>
-<br>
-<div id = "myDiv4"></div>
+      <div class="page-header">
+      	<h1>Choose the Lessons You Want to Practice</h1>
+      </div>
 
-<hr />
-<footer>
-<p>Edited by: kyletso</p>
-<p>Contact information: <a href="mailto:kyletso@gmail.com">kyletso@gmail.com</a>.</p>
-</footer>
+      <p>
+		<input type = "button" value = "Check All" class="btn btn-default" onclick = "checkAll(document.formCheckbox.check)"></input>
+		<input type = "button" value = "Uncheck All" class="btn btn-default" onclick = "uncheckAll(document.formCheckbox.check)"></input>
+	  </p>
+		
+	  <p>	
+		<form name = "formCheckbox">
+		<input type = "checkbox" id = "cb_L7" name = "check" value = "L7">L7</input>
+		<input type = "checkbox" id = "cb_L8" name = "check" value = "L8">L8</input>
+		<input type = "checkbox" id = "cb_L9" name = "check" value = "L9">L9</input>
+		<input type = "checkbox" id = "cb_L10" name = "check" value = "L10">L10</input>
+		<input type = "checkbox" id = "cb_L11" name = "check" value = "L11">L11(~No.34)</input><br>
+		</form>
+		<input type = "button" value = "Load" class="btn btn-primary" onclick = "loadXML()"></input>
+	  </p>
+
+	  <p>
+		<div id = "loadStatus" style = "visibility:hidden" class="alert alert-success">
+        	<strong>Loading Complete!</strong> Now you can can press the Next Word button.
+		</div>
+	  </p>
+
+		<br />
+		<hr />
+	  
+	  <p>	
+		<div id = "myDiv"></div>
+	  </p>
+
+	  <p class = "lead">	
+		<div id = "myDiv2"></div>
+	  </p>
+
+	  <p>
+		<div id = "myDiv3"></div>
+	  </p>
+
+	  <p>	
+		<input type = "button" id = "nextButton" value = "Next Word (RightArrow)" class="btn btn-primary" onclick = "nextWord()"></input>
+		<input type = "button" id = "showAnswer" value = "Show Answer (DownArrow)" class="btn btn-success" onclick = "answer()"></input>
+	  </p>
+
+		<br />
+		<hr />
+		<br />
+	  <p>
+		<input type = "button" id = "listAll" value = "List All Words" class="btn btn-primary" onclick = "listAll()"></input>
+		<input type = "button" id = "closeList" value = "Close List" class="btn btn-primary" onclick = "closeList()"></input>
+	  </p>
+		<br>
+		<div id = "myDiv4"></div>
+
+		<hr />
+
+	  <div class="page-header">
+        <h1>About</h1>
+      </div>
+      <div class="well">
+		<footer>
+		<address>
+  			<strong>Edited by:</strong><br>
+  			kyletso
+		</address>
+		<address>
+  			<strong>Contact information:</strong><br>
+  			<a href="mailto:#">kyletso@gmail.com</a>
+		</address>
+		</footer>
+	  </div>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!--
+    <script src="../../assets/js/docs.min.js"></script>
+	-->
 </body>
 
 </html>
