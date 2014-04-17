@@ -5,8 +5,6 @@ xmlhttp.open("GET", "words.xml", false);
 xmlhttp.send();
 xmlDoc = xmlhttp.responseXML;
 
-//var x = xmlDoc.getElementsByTagName("word");
-//var lessonCollectionAll;
 var wordCollectionAll = new Array();
 
 var words = new Array();
@@ -39,34 +37,17 @@ function uncheckAll(field)
 
 function loadXML()
 {
-	//        var words = new Array();
-
-	/*        xmlhttp = new XMLHttpRequest();
-			  xmlhttp.open("GET", "words.xml", false);
-			  xmlhttp.send();
-			  xmlDoc = xmlhttp.responseXML;
-
-			  var x = xmlDoc.getElementsByTagName("word");
-	 */
-
 	wordCollectionAll.length = 0;
-	//alert(2);
+
 	if (document.getElementById("cb_L7").checked)
 	{
-		//		alert(1);
-		//		wordCollectionAll = xmlDoc.getElementsByTagName("L7")[0].getElementsByTagName("word");
 		var wordL7 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L7 word'));
 		wordCollectionAll = wordCollectionAll.concat(wordL7);
-		//	alert(lessonCollectionAll);
-		//alert(1);
 	}
 	if (document.getElementById("cb_L8").checked)
 	{
 		var wordL8 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L8 word'));
 		wordCollectionAll = wordCollectionAll.concat(wordL8);
-
-		//lessonCollectionAll += xmlDoc.getElementsByTagName("L8");
-		//		alert(1);
 	}
 	if (document.getElementById("cb_L9").checked)
 	{
@@ -77,33 +58,14 @@ function loadXML()
 	{
 		var wordL10 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L10 word'));
 		wordCollectionAll = wordCollectionAll.concat(wordL10);
-
 	}
 	if (document.getElementById("cb_L11").checked)
 	{
 		var wordL11 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L11 word'));
 		wordCollectionAll = wordCollectionAll.concat(wordL11);
-
 	}
 
 	iter = wordCollectionAll.length;
-
-	/*
-	   alert(wordCollectionAll[0].getElementsByTagName("chinese")[0].childNodes[0].nodeValue);
-	   alert(wordCollectionAll[1].getElementsByTagName("chinese")[0].childNodes[0].nodeValue);
-	   alert(wordCollectionAll[2].getElementsByTagName("chinese")[0].childNodes[0].nodeValue);
-	 */
-
-	//	var txt = "";
-	//	for (i = 0; i < wordCollectionAll.length; i++)
-	//	{
-	//		alert(2);
-	//		txt += wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
-	//	alert(3);
-	//		txt += "<br>";
-	//	}
-	//	document.getElementById("myDiv").innerHTML = txt;
-
 
 	for (i = 0; i < wordCollectionAll.length; i++)
 	{
@@ -118,29 +80,6 @@ function loadXML()
 		words[i][3] = wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
 		words[i][4] = wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
 	}
-	/*
-	   var txt = "";
-	   txt += "<table border='1'>";
-	   txt += "<tr><td>中文</td><td>hiragana</td><td>kanji</td><td>katakana</td><td>option</td></tr>";
-
-	   for (i = 0; i < wordCollectionAll.length; i++)
-	   {
-	   txt += "<tr><td>";
-	   txt += words[i][0];
-	   txt += "</td><td>";
-	   txt += words[i][1];
-	   txt += "</td><td>";
-	   txt += words[i][2];
-	   txt += "</td><td>";
-	   txt += words[i][3];
-	   txt += "</td><td>";
-	   txt += words[i][4];
-	   txt += "</td></tr>";
-	   }	
-
-	   txt += "</table>";
-	 */
-	//	document.getElementById("myDiv").innerHTML = txt;
 
 	document.getElementById("loadStatus").style.visibility = "visible";
 
@@ -153,7 +92,6 @@ var rn;
 
 function nextWord()
 {
-	//alert(iter);
 	document.getElementById("myDiv3").style.visibility = "hidden";
 	document.getElementById("loadStatus").style.visibility = "hidden";
 
@@ -161,25 +99,7 @@ function nextWord()
 	{
 		iter = wordCollectionAll.length;	
 	}
-	/*
-	   var txt2 = "";
-	   txt2 += "<table border='1'>";
-	   txt2 += "<tr><td>中文</td><td>hiragana</td><td>kanji</td><td>katakana</td></tr>";
 
-	   var rn;
-	   rn = Math.floor(Math.random() * iter);
-	   txt2 += "<tr><td>";
-	   txt2 += words[rn][0];
-	   txt2 += "</td><td>";
-	   txt2 += words[rn][1];
-	   txt2 += "</td><td>";
-	   txt2 += words[rn][2];
-	   txt2 += "</td><td>";
-	   txt2 += words[rn][3];
-	   txt2 += "</td></tr>";
-
-	   txt2 += "</table>";
-	 */
 	txtQuestion = "";	
 	rn = Math.floor(Math.random() * iter);
 	txtQuestion += words[rn][0];
@@ -199,7 +119,7 @@ function nextWord()
 	if (iter == 0)
 	{
 		document.getElementById("nextButton").value = "Restart (RightArrow)";
-		alert("Finish");
+		alert("Last Word");
 	}
 	else
 	{
