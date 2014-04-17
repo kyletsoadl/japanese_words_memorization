@@ -118,28 +118,28 @@ function loadXML()
 		words[i][3] = wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
 		words[i][4] = wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
 	}
-/*
-	var txt = "";
-	txt += "<table border='1'>";
-	txt += "<tr><td>中文</td><td>hiragana</td><td>kanji</td><td>katakana</td><td>option</td></tr>";
+	/*
+	   var txt = "";
+	   txt += "<table border='1'>";
+	   txt += "<tr><td>中文</td><td>hiragana</td><td>kanji</td><td>katakana</td><td>option</td></tr>";
 
-	for (i = 0; i < wordCollectionAll.length; i++)
-	{
-		txt += "<tr><td>";
-		txt += words[i][0];
-		txt += "</td><td>";
-		txt += words[i][1];
-		txt += "</td><td>";
-		txt += words[i][2];
-		txt += "</td><td>";
-		txt += words[i][3];
-		txt += "</td><td>";
-		txt += words[i][4];
-		txt += "</td></tr>";
-	}	
+	   for (i = 0; i < wordCollectionAll.length; i++)
+	   {
+	   txt += "<tr><td>";
+	   txt += words[i][0];
+	   txt += "</td><td>";
+	   txt += words[i][1];
+	   txt += "</td><td>";
+	   txt += words[i][2];
+	   txt += "</td><td>";
+	   txt += words[i][3];
+	   txt += "</td><td>";
+	   txt += words[i][4];
+	   txt += "</td></tr>";
+	   }	
 
-	txt += "</table>";
-*/
+	   txt += "</table>";
+	 */
 	//	document.getElementById("myDiv").innerHTML = txt;
 
 	document.getElementById("loadStatus").style.visibility = "visible";
@@ -198,11 +198,12 @@ function nextWord()
 
 	if (iter == 0)
 	{
-		document.getElementById("nextButton").value = "Restart";
+		document.getElementById("nextButton").value = "Restart (RightArrow)";
+		alert("Finish");
 	}
 	else
 	{
-		document.getElementById("nextButton").value = "Next";
+		document.getElementById("nextButton").value = "Next Word (RightArrow)";
 	}
 
 }
@@ -262,6 +263,22 @@ function closeList()
 	document.getElementById("myDiv4").style.display = "none";
 }
 
+
+document.onkeydown = function(event)
+{
+	var e = event || window.event;
+	//alert(e.keyCode);
+	if (e && (e.keyCode == '39'))
+	{
+		nextWord();
+	}
+	if (e && (e.keyCode == '40'))
+	{
+		answer();
+	}
+}
+
+
 </script>
 
 <input type = "button" value = "Check All" onclick = "checkAll(document.formCheckbox.check)"></input>
@@ -283,8 +300,8 @@ function closeList()
 <div id = "myDiv2"></div>
 <br />
 <div id = "myDiv3"></div>
-<input type = "button" id = "nextButton" value = "Next Word" onclick = "nextWord()"></input>
-<input type = "button" id = "showAnswer" value = "Show Answer" onclick = "answer()"></input>
+<input type = "button" id = "nextButton" value = "Next Word (RightArrow)" onclick = "nextWord()"></input>
+<input type = "button" id = "showAnswer" value = "Show Answer (DownArrow)" onclick = "answer()"></input>
 <br />
 <hr />
 <br />
@@ -295,8 +312,8 @@ function closeList()
 
 <hr />
 <footer>
-	<p>Edited by: kyletso</p>
-	<p>Contact information: <a href="mailto:kyletso@gmail.com">kyletso@gmail.com</a>.</p>
+<p>Edited by: kyletso</p>
+<p>Contact information: <a href="mailto:kyletso@gmail.com">kyletso@gmail.com</a>.</p>
 </footer>
 </body>
 

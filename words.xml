@@ -887,6 +887,13 @@
         <katakana> </katakana>
         <option> </option>
     </word>
+	<word>
+		<chinese>討厭的，不喜歡的</chinese>
+		<hiragana>きらい　[な]</hiragana>
+		<kanji>嫌い　[な]</kanji>
+		<katakana> </katakana>
+		<option> </option>
+	</word>
     <word>
         <chinese>好的，高明的</chinese>
         <hiragana>じょうず　[な]</hiragana>
@@ -1575,7 +1582,7 @@
 		    <hiragana>かかります</hiragana>
 		    <kanji> </kanji>
 		    <katakana> </katakana>
-        <option> </option>
+        <option>かかる</option>
 	  </word>
     <word>
         <chinese>向 [公司] 請假</chinese>
@@ -1710,6 +1717,13 @@
         <katakana> </katakana>
         <option> </option>
     </word>
+	<word>
+		<chinese>橘子</chinese>
+		<hiragana>みかん</hiragana>
+		<kanji> </kanji>
+		<katakana> </katakana>
+		<option> </option>
+	</word>
     <word>
         <chinese>三明治</chinese>
         <hiragana> </hiragana>
