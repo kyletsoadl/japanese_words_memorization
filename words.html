@@ -271,7 +271,7 @@ function closeList()
 	document.getElementById("divListWord").style.display = "none";
 }
 
-
+/*
 document.onkeydown = function(event)
 {
 	var e = event || window.event;
@@ -285,7 +285,7 @@ document.onkeydown = function(event)
 		answer();
 	}
 }
-
+*/
 
 </script>
 
@@ -298,9 +298,14 @@ document.onkeydown = function(event)
         	<p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       	</div>
 
+		<!-- Choose Lessons -->
       	<div class="page-header">
       		<h3>Choose the Lessons You Want to Practice</h3>
       	</div>
+      	<blockquote>
+  			<p>After choosing the lessons, press the "Load" button.</p>
+		</blockquote>
+
 
       	<div>
       		<p>
@@ -342,6 +347,7 @@ document.onkeydown = function(event)
 			</div>
 		</p>
 
+		<!-- Question and Answer -->
       	<div class="page-header">
       		<h3>Press the "Next Word" Button to Show Words Randomly</h3>
       	</div>
@@ -356,9 +362,10 @@ document.onkeydown = function(event)
 
 	  	<p>	
 			<input type="button" id="nextButton" value="Next Word (RightArrow)" class="btn btn-primary" onclick="nextWord()"></input>
-			<input type="button" id="showAnswer" value="Show Answer (DownArrow)" class="btn btn-success" onclick="answer()"></input>
+			<input type="button" id="showAnswer" value="Show Answer (LeftArrow)" class="btn btn-success" onclick="answer()"></input>
 	  	</p>
 
+		<!-- List All Words -->
       	<div class="page-header">
       		<h3>Press the "List All Words" Button to Show All Loaded Words</h3>
       	</div>
@@ -372,6 +379,7 @@ document.onkeydown = function(event)
 		
 		<div id="divListWord"></div>
 
+		<!-- About -->
 	  	<div class="page-header">
         	<h3>About</h3>
       	</div>
@@ -396,6 +404,21 @@ document.onkeydown = function(event)
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+		$(document).keydown(function (e)
+		{
+			//alert(e.keyCode);
+			if (e && (e.keyCode == '39'))	// 39 --> right arrow
+			{
+				//alert(e.keyCode);
+				nextWord();
+			}
+			if (e && (e.keyCode == '37'))	// 37 --> left arrow
+			{
+				answer();
+			}
+		});
+	   	</script>
     <!--
     <script src="../../assets/js/docs.min.js"></script>
 	-->
