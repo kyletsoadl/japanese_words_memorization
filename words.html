@@ -30,42 +30,6 @@
     	<![endif]-->
   	</head>
 
-<body role="document">
-
-	<!-- Fixed navbar -->
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-	    	<div class="navbar-header">
-	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	        	<span class="sr-only">Toggle navigation</span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	      		</button>
-	      		<a class="navbar-brand" href="#">Bootstrap theme</a>
-	    	</div>
-		    <div class="navbar-collapse collapse">
-		    	<ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Home</a></li>
-			        <li><a href="#about">About</a></li>
-			        <li><a href="#contact">Contact</a></li>
-			        <li class="dropdown">
-		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-		            	<ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li class="divider"></li>
-				            <li class="dropdown-header">Nav header</li>
-				            <li><a href="#">Separated link</a></li>
-				            <li><a href="#">One more separated link</a></li>
-		          		</ul>
-		        	</li>
-		      </ul>
-		    </div><!--/.nav-collapse -->
-	  	</div>
-	</div>
-
 <script>
 xmlhttp = new XMLHttpRequest();
 xmlhttp.open("GET", "words.xml", false);
@@ -84,7 +48,7 @@ var txtAnswer;
 
 var txtListAll;
 
-document.getElementById("divLoadSuccess").style.display = "none";
+//document.getElementById("divLoadSuccess").style.display = "none";
 
 function checkAll(field)
 {
@@ -287,8 +251,45 @@ document.onkeydown = function(event)
 }
 */
 
-</script>
+</script>    
 
+<body role="document">
+
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="#">Bootstrap theme</a>
+	    	</div>
+		    <div class="navbar-collapse collapse">
+		    	<ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Home</a></li>
+			        <li><a href="#about">About</a></li>
+			        <li><a href="#contact">Contact</a></li>
+			        <li class="dropdown">
+		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		            	<ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li class="divider"></li>
+				            <li class="dropdown-header">Nav header</li>
+				            <li><a href="#">Separated link</a></li>
+				            <li><a href="#">One more separated link</a></li>
+		          		</ul>
+		        	</li>
+		      </ul>
+		    </div><!--/.nav-collapse -->
+	  	</div>
+	</div>
+
+	<!-- Container -->
     <div class="container theme-showcase" role="main">
 
     	<!-- Main jumbotron for a primary marketing message or call to action -->
@@ -404,21 +405,26 @@ document.onkeydown = function(event)
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script>
-		$(document).keydown(function (e)
+
+    <!-- Those JavaScript code which should be loaded after jQuery are placed here.  -->
+    <script type="text/javascript">
+		$(document).ready(function ()
 		{
-			//alert(e.keyCode);
-			if (e && (e.keyCode == '39'))	// 39 --> right arrow
+			$(document).keydown(function (e)
 			{
 				//alert(e.keyCode);
-				nextWord();
-			}
-			if (e && (e.keyCode == '37'))	// 37 --> left arrow
-			{
-				answer();
-			}
+				if (e && (e.keyCode == '39'))	// 39 --> right arrow
+				{
+					//alert(e.keyCode);
+					nextWord();
+				}
+				if (e && (e.keyCode == '37'))	// 37 --> left arrow
+				{
+					answer();
+				}
+			});
 		});
-	   	</script>
+    </script>
     <!--
     <script src="../../assets/js/docs.min.js"></script>
 	-->
