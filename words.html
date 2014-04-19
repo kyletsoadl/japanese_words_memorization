@@ -91,6 +91,8 @@ function loadXML(field)
 	        $(this).css({"visibility":"visible"});
 	        $(this).css({"display":"block"});
 		});
+		document.getElementById("divQuestion").style.display = "none";
+		document.getElementById("divAnswer").style.visibility = "hidden";
 	}
 	else
 	{
@@ -147,6 +149,10 @@ function loadXML(field)
 	        $(this).css({"visibility":"visible"});
 	        $(this).css({"display":"block"});
 		});
+		document.getElementById("divQuestion").style.display = "none";
+		document.getElementById("divAnswer").style.visibility = "hidden";
+		$("#showAnswer").html('<span>Show Answer <span class="glyphicon glyphicon-arrow-left"></span></span>');
+		$("#showAnswer").prop("class", "btn btn-success");
 	}
 }
 
@@ -155,13 +161,9 @@ var rn;
 function nextWord()
 {
 	document.getElementById("divAnswer").style.visibility = "hidden";
-	//document.getElementById("divLoadSuccess").style.display = "none";
-	$("#divLoadSuccess").fadeOut("slow", function() 
-	{
-        $(this).css({"visibility":"hidden"});
-        $(this).css({"display":"block"});
-    });
-
+	$("#showAnswer").html('<span>Show Answer <span class="glyphicon glyphicon-arrow-left"></span></span>');
+	$("#showAnswer").prop("class", "btn btn-success");
+	
 	if (iter == 0)
 	{
 		iter = wordCollectionAll.length;	
@@ -169,10 +171,18 @@ function nextWord()
 
 	if (words.length)
 	{
+		//document.getElementById("divLoadSuccess").style.display = "none";
+		$("#divLoadSuccess").fadeOut("slow", function() 
+		{
+	        $(this).css({"visibility":"hidden"});
+	        $(this).css({"display":"block"});
+	    });
+
 		txtQuestion = "";	
 		rn = Math.floor(Math.random() * iter);
 		txtQuestion += words[rn][0];
 
+		document.getElementById("divQuestion").style.display = "block";
 		document.getElementById("divQuestion").innerHTML = txtQuestion;
 
 		var tempArray = new Array(5);
@@ -199,25 +209,40 @@ function nextWord()
 
 function answer()
 {
+
 	if (words.length && txtQuestion)
 	{
-		txtAnswer = "";
-		txtAnswer += "<table class = 'table table-bordered table-hover table-striped'>";
-		txtAnswer += "<thead><tr><th>平假名</th><th>漢字</th><th>片假名</th><th>其他</th></tr></thead>";
-		txtAnswer += "<tbody><tr><td>";
-		txtAnswer += words[iter][1];
-		txtAnswer += "</td><td>";
-		txtAnswer += words[iter][2];
-		txtAnswer += "</td><td>";
-		txtAnswer += words[iter][3];
-		txtAnswer += "</td><td>";
-		txtAnswer += words[iter][4];
-		txtAnswer += "</td></tr></tbody>";
+		//alert($("#showAnswer").html());
+		if ($("#showAnswer span").text() == "Show Answer ")
+		{
+			//alert(1);
+			$("#showAnswer").html('<span>Close Answer <span class="glyphicon glyphicon-arrow-left"></span></span>');
+			$("#showAnswer").prop("class", "btn btn-default");
+		
+			txtAnswer = "";
+			txtAnswer += "<table class = 'table table-bordered table-hover table-striped'>";
+			txtAnswer += "<thead><tr><th>平假名</th><th>漢字</th><th>片假名</th><th>其他</th></tr></thead>";
+			txtAnswer += "<tbody><tr><td>";
+			txtAnswer += words[iter][1];
+			txtAnswer += "</td><td>";
+			txtAnswer += words[iter][2];
+			txtAnswer += "</td><td>";
+			txtAnswer += words[iter][3];
+			txtAnswer += "</td><td>";
+			txtAnswer += words[iter][4];
+			txtAnswer += "</td></tr></tbody>";
 
-		txtAnswer += "</table>";
+			txtAnswer += "</table>";
 
-		document.getElementById("divAnswer").innerHTML = txtAnswer;
-		document.getElementById("divAnswer").style.visibility = "visible";
+			document.getElementById("divAnswer").innerHTML = txtAnswer;
+			document.getElementById("divAnswer").style.visibility = "visible";
+		}
+		else
+		{
+			$("#showAnswer").html('<span>Show Answer <span class="glyphicon glyphicon-arrow-left"></span></span>');
+			$("#showAnswer").prop("class", "btn btn-success");
+			document.getElementById("divAnswer").style.visibility = "hidden";
+		}
 	}
 }
 
@@ -338,11 +363,11 @@ document.onkeydown = function(event)
 
 		<!-- Choose Lessons -->
       	<div class="page-header">
-      		<h3>Choose the Lessons You Want to Practice</h3>
+      		<h3>Choose the Lessons You Want to Practice <small>Multiple Choice</small></h3>
       	</div>
       	  
       	<blockquote>
-  			<p>After choosing the lessons, press the <span class="label label-default">Load</span> button.</p>
+  			<p>After Selecting the lessons, press the <span class="label label-default">Load</span> button.</p>
 		</blockquote>
 		
 		<!--
