@@ -85,7 +85,12 @@ function loadXML(field)
 		document.getElementById("divLoadSuccess").style.display = "none";
 		document.getElementById("divLoadFail").style.display = "none";
 		//document.getElementById("divLoadFail").style.display = "block";
-		$("#divLoadFail").fadeIn("slow").css("display","inline-block");
+		//$("#divLoadFail").fadeIn("slow").css("display","inline-block");
+		$("#divLoadFail").fadeIn("slow", function()
+		{
+	        $(this).css({"visibility":"visible"});
+	        $(this).css({"display":"block"});
+		});
 	}
 	else
 	{
@@ -133,9 +138,15 @@ function loadXML(field)
 
 		document.getElementById("divLoadFail").style.display = "none";
 		document.getElementById("divLoadSuccess").style.display = "none";
+		//$("#divLoadSuccess").prop("display", "none");
 		//$("#divLoadFail").fadeOut("slow");
 		//document.getElementById("divLoadSuccess").style.display = "block";
-		$("#divLoadSuccess").fadeIn("slow").css("display","inline-block");
+		//$("#divLoadSuccess").fadeIn("slow").css("display","inline-block");
+		$("#divLoadSuccess").fadeIn("slow", function()
+		{
+	        $(this).css({"visibility":"visible"});
+	        $(this).css({"display":"block"});
+		});
 	}
 }
 
@@ -145,59 +156,69 @@ function nextWord()
 {
 	document.getElementById("divAnswer").style.visibility = "hidden";
 	//document.getElementById("divLoadSuccess").style.display = "none";
-	$("#divLoadSuccess").fadeOut("slow");
+	$("#divLoadSuccess").fadeOut("slow", function() 
+	{
+        $(this).css({"visibility":"hidden"});
+        $(this).css({"display":"block"});
+    });
 
 	if (iter == 0)
 	{
 		iter = wordCollectionAll.length;	
 	}
 
-	txtQuestion = "";	
-	rn = Math.floor(Math.random() * iter);
-	txtQuestion += words[rn][0];
-
-	document.getElementById("divQuestion").innerHTML = txtQuestion;
-
-	var tempArray = new Array(5);
-	for (i = 0; i < 5; i++)
+	if (words.length)
 	{
-		tempArray[i] = words[rn][i];
-		words[rn][i] = words[iter - 1][i];
-		words[iter - 1][i] = tempArray[i];
-	}
+		txtQuestion = "";	
+		rn = Math.floor(Math.random() * iter);
+		txtQuestion += words[rn][0];
 
-	iter--;
+		document.getElementById("divQuestion").innerHTML = txtQuestion;
 
-	if (iter == 0)
-	{
-		document.getElementById("nextButton").value = "Restart (RightArrow)";
-		alert("Last Word");
-	}
-	else
-	{
-		document.getElementById("nextButton").value = "Next Word (RightArrow)";
+		var tempArray = new Array(5);
+		for (i = 0; i < 5; i++)
+		{
+			tempArray[i] = words[rn][i];
+			words[rn][i] = words[iter - 1][i];
+			words[iter - 1][i] = tempArray[i];
+		}
+
+		iter--;
+
+		if (iter == 0)
+		{
+			document.getElementById("nextButton").value = "Restart (RightArrow)";
+			alert("Last Word");
+		}
+		else
+		{
+			document.getElementById("nextButton").value = "Next Word (RightArrow)";
+		}
 	}
 }
 
 function answer()
 {
-	txtAnswer = "";
-	txtAnswer += "<table class = 'table table-bordered table-hover table-striped'>";
-	txtAnswer += "<thead><tr><th>平假名</th><th>漢字</th><th>片假名</th><th>其他</th></tr></thead>";
-	txtAnswer += "<tbody><tr><td>";
-	txtAnswer += words[iter][1];
-	txtAnswer += "</td><td>";
-	txtAnswer += words[iter][2];
-	txtAnswer += "</td><td>";
-	txtAnswer += words[iter][3];
-	txtAnswer += "</td><td>";
-	txtAnswer += words[iter][4];
-	txtAnswer += "</td></tr></tbody>";
+	if (words.length && txtQuestion)
+	{
+		txtAnswer = "";
+		txtAnswer += "<table class = 'table table-bordered table-hover table-striped'>";
+		txtAnswer += "<thead><tr><th>平假名</th><th>漢字</th><th>片假名</th><th>其他</th></tr></thead>";
+		txtAnswer += "<tbody><tr><td>";
+		txtAnswer += words[iter][1];
+		txtAnswer += "</td><td>";
+		txtAnswer += words[iter][2];
+		txtAnswer += "</td><td>";
+		txtAnswer += words[iter][3];
+		txtAnswer += "</td><td>";
+		txtAnswer += words[iter][4];
+		txtAnswer += "</td></tr></tbody>";
 
-	txtAnswer += "</table>";
+		txtAnswer += "</table>";
 
-	document.getElementById("divAnswer").innerHTML = txtAnswer;
-	document.getElementById("divAnswer").style.visibility = "visible";
+		document.getElementById("divAnswer").innerHTML = txtAnswer;
+		document.getElementById("divAnswer").style.visibility = "visible";
+	}
 }
 
 function listAll()
@@ -233,6 +254,22 @@ function listAll()
 function closeList()
 {
 	document.getElementById("divListWord").style.display = "none";
+}
+
+function toggleList()
+{
+	if ($("#toggleList span").text() == "List All Words")
+	{
+		listAll();
+		$("#toggleList span").text("Close List");
+		$("#toggleList").prop("class", "btn btn-default");
+	}
+	else
+	{
+		closeList();
+		$("#toggleList span").text("List All Words");
+		$("#toggleList").prop("class", "btn btn-primary");
+	}
 }
 
 /*
@@ -303,10 +340,16 @@ document.onkeydown = function(event)
       	<div class="page-header">
       		<h3>Choose the Lessons You Want to Practice</h3>
       	</div>
+      	  
       	<blockquote>
-  			<p>After choosing the lessons, press the "Load" button.</p>
+  			<p>After choosing the lessons, press the <span class="label label-default">Load</span> button.</p>
 		</blockquote>
-
+		
+		<!--
+		<div class="bs-callout bs-callout-info">
+			<p>After choosing the lessons, press the "Load" button.</p>
+		</div>
+		-->
 
       	<div>
       		<p>
@@ -337,7 +380,7 @@ document.onkeydown = function(event)
 
 		<div>
 			<input type="button" value="Load" class="btn btn-primary" onclick="loadXML(document.formCheckbox.check)"></input>
-	  	</div>
+  		</div>
 
 		<p>
 			<div id="divLoadSuccess" style="display:none" class="alert alert-success">
@@ -353,6 +396,14 @@ document.onkeydown = function(event)
       		<h3>Press the "Next Word" Button to Show Words Randomly</h3>
       	</div>
 
+      	<blockquote>
+  			<p>
+  				You can also use keyboard hotkeys [<span class="glyphicon glyphicon-arrow-right"></span>] as the <span class="label label-default">Next Word</span> button.
+  				<br />
+				And [<span class="glyphicon glyphicon-arrow-left"></span>] as the <span class="label label-default">Show Answer</span> button.
+  			</p>
+		</blockquote>
+
 	  	<p>	
 			<div id="divQuestion" class="lead"></div>
 	  	</p>
@@ -362,8 +413,12 @@ document.onkeydown = function(event)
 		</p>
 
 	  	<p>	
-			<input type="button" id="nextButton" value="Next Word (RightArrow)" class="btn btn-primary" onclick="nextWord()"></input>
-			<input type="button" id="showAnswer" value="Show Answer (LeftArrow)" class="btn btn-success" onclick="answer()"></input>
+			<button id="nextButton" class="btn btn-primary" onclick="nextWord()">
+				<span>Next Word <span class="glyphicon glyphicon-arrow-right"></span></span>
+			</button>
+			<button id="showAnswer" class="btn btn-success" onclick="answer()">
+				<span>Show Answer <span class="glyphicon glyphicon-arrow-left"></span></span>
+			</button>
 	  	</p>
 
 		<!-- List All Words -->
@@ -372,8 +427,13 @@ document.onkeydown = function(event)
       	</div>
 	  	
 	  	<p>
+	  		<!--
 			<input type="button" id="listAll" value="List All Words" class="btn btn-primary" onclick="listAll()"></input>
 			<input type="button" id="closeList" value="Close List" class="btn btn-primary" onclick="closeList()"></input>
+			-->
+			<button id="toggleList" class="btn btn-primary" onclick="toggleList()">
+				<span>List All Words</span>
+			</button>
 	  	</p>
 		
 		<br>
@@ -413,12 +473,12 @@ document.onkeydown = function(event)
 			$(document).keydown(function (e)
 			{
 				//alert(e.keyCode);
-				if (e && (e.keyCode == '39'))	// 39 --> right arrow
+				if (e && (e.which == '39'))	// 39 --> right arrow
 				{
 					//alert(e.keyCode);
 					nextWord();
 				}
-				if (e && (e.keyCode == '37'))	// 37 --> left arrow
+				if (e && (e.which == '37'))	// 37 --> left arrow
 				{
 					answer();
 				}
