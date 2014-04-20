@@ -61,3 +61,21 @@ body {
 .bs-callout-info h4{
 	color:#5bc0de
 }
+
+/* Light theme */
+.btn-light {
+  color: #555;
+  background-color: rgba(0, 0, 0,.1);
+}
+.btn-light:hover {
+  color: #111;
+  background-color: rgba(0, 0, 0,.25);
+}
+
+/* Fixed button, bottom right */
+.btn-fixed-bottom {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  display: none;
+}
