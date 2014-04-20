@@ -1,4 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-tw">
+ 	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+	    <!-- 
+	    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+		-->
+
+    	<title>Japanese Words Memorization Helper</title>
+
+	    <!-- Bootstrap core CSS -->
+    	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    	<!-- Bootstrap theme -->
+    	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    	<!-- Custom styles for this template -->
+    	<link href="theme.css" rel="stylesheet">
+
+    	<!-- Just for debugging purposes. Don't actually copy this line! -->
+    	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    	<!--[if lt IE 9]>
+      		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+  	</head>
+
 <script>
 xmlhttp = new XMLHttpRequest();
 xmlhttp.open("GET", "words.xml", false);
@@ -17,7 +48,7 @@ var txtAnswer;
 
 var txtListAll;
 
-document.getElementById("loadStatus").style.visibility = "hidden";
+//document.getElementById("divLoadSuccess").style.display = "none";
 
 function checkAll(field)
 {
@@ -35,127 +66,193 @@ function uncheckAll(field)
 	}
 }
 
-function loadXML()
+function loadXML(field)
 {
 	wordCollectionAll.length = 0;
+	words.length = 0;
 
-	if (document.getElementById("cb_L7").checked)
+	var noOptionChecked = true; 
+	for (i = 0; i < field.length; i++)
 	{
-		var wordL7 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L7 word'));
-		wordCollectionAll = wordCollectionAll.concat(wordL7);
-	}
-	if (document.getElementById("cb_L8").checked)
-	{
-		var wordL8 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L8 word'));
-		wordCollectionAll = wordCollectionAll.concat(wordL8);
-	}
-	if (document.getElementById("cb_L9").checked)
-	{
-		var wordL9 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L9 word'));
-		wordCollectionAll = wordCollectionAll.concat(wordL9);
-	}
-	if (document.getElementById("cb_L10").checked)
-	{
-		var wordL10 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L10 word'));
-		wordCollectionAll = wordCollectionAll.concat(wordL10);
-	}
-	if (document.getElementById("cb_L11").checked)
-	{
-		var wordL11 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L11 word'));
-		wordCollectionAll = wordCollectionAll.concat(wordL11);
+		if (field[i].checked)
+		{
+			noOptionChecked = false;
+		}
 	}
 
-	iter = wordCollectionAll.length;
-
-	for (i = 0; i < wordCollectionAll.length; i++)
+	if (noOptionChecked)
 	{
-		words[i] = new Array(5);
+		document.getElementById("divLoadSuccess").style.display = "none";
+		document.getElementById("divLoadFail").style.display = "none";
+		//document.getElementById("divLoadFail").style.display = "block";
+		//$("#divLoadFail").fadeIn("slow").css("display","inline-block");
+		$("#divLoadFail").fadeIn("slow", function()
+		{
+	        $(this).css({"visibility":"visible"});
+	        $(this).css({"display":"block"});
+		});
+		document.getElementById("divQuestion").style.display = "none";
+		document.getElementById("divAnswer").style.visibility = "hidden";
 	}
-
-	for (i = 0; i < wordCollectionAll.length; i++)
+	else
 	{
-		words[i][0] = wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
-		words[i][1] = wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes[0].nodeValue;
-		words[i][2] = wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes[0].nodeValue;
-		words[i][3] = wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
-		words[i][4] = wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
+		if (document.getElementById("cb_L7").checked)
+		{
+			var wordL7 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L7 word'));
+			wordCollectionAll = wordCollectionAll.concat(wordL7);
+		}
+		if (document.getElementById("cb_L8").checked)
+		{
+			var wordL8 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L8 word'));
+			wordCollectionAll = wordCollectionAll.concat(wordL8);
+		}
+		if (document.getElementById("cb_L9").checked)
+		{
+			var wordL9 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L9 word'));
+			wordCollectionAll = wordCollectionAll.concat(wordL9);
+		}
+		if (document.getElementById("cb_L10").checked)
+		{
+			var wordL10 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L10 word'));
+			wordCollectionAll = wordCollectionAll.concat(wordL10);
+		}
+		if (document.getElementById("cb_L11").checked)
+		{
+			var wordL11 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L11 word'));
+			wordCollectionAll = wordCollectionAll.concat(wordL11);
+		}
+
+		iter = wordCollectionAll.length;
+
+		for (i = 0; i < wordCollectionAll.length; i++)
+		{
+			words[i] = new Array(5);
+		}
+
+		for (i = 0; i < wordCollectionAll.length; i++)
+		{
+			words[i][0] = wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
+			words[i][1] = wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes[0].nodeValue;
+			words[i][2] = wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes[0].nodeValue;
+			words[i][3] = wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
+			words[i][4] = wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
+		}
+
+		document.getElementById("divLoadFail").style.display = "none";
+		document.getElementById("divLoadSuccess").style.display = "none";
+		//$("#divLoadSuccess").prop("display", "none");
+		//$("#divLoadFail").fadeOut("slow");
+		//document.getElementById("divLoadSuccess").style.display = "block";
+		//$("#divLoadSuccess").fadeIn("slow").css("display","inline-block");
+		$("#divLoadSuccess").fadeIn("slow", function()
+		{
+	        $(this).css({"visibility":"visible"});
+	        $(this).css({"display":"block"});
+		});
+		document.getElementById("divQuestion").style.display = "none";
+		document.getElementById("divAnswer").style.visibility = "hidden";
+		$("#showAnswer").html('<span>Show Answer <span class="glyphicon glyphicon-arrow-left"></span></span>');
+		$("#showAnswer").prop("class", "btn btn-success");
 	}
-
-	document.getElementById("loadStatus").style.visibility = "visible";
-
 }
-</script>
 
-<body>
-<script>
 var rn;
 
 function nextWord()
 {
-	document.getElementById("myDiv3").style.visibility = "hidden";
-	document.getElementById("loadStatus").style.visibility = "hidden";
-
+	document.getElementById("divAnswer").style.visibility = "hidden";
+	$("#showAnswer").html('<span>Show Answer <span class="glyphicon glyphicon-arrow-left"></span></span>');
+	$("#showAnswer").prop("class", "btn btn-success");
+	
 	if (iter == 0)
 	{
 		iter = wordCollectionAll.length;	
 	}
 
-	txtQuestion = "";	
-	rn = Math.floor(Math.random() * iter);
-	txtQuestion += words[rn][0];
-
-	document.getElementById("myDiv2").innerHTML = txtQuestion;
-
-	var tempArray = new Array(5);
-	for (i = 0; i < 5; i++)
+	if (words.length)
 	{
-		tempArray[i] = words[rn][i];
-		words[rn][i] = words[iter - 1][i];
-		words[iter - 1][i] = tempArray[i];
-	}
+		//document.getElementById("divLoadSuccess").style.display = "none";
+		$("#divLoadSuccess").fadeOut("slow", function() 
+		{
+	        $(this).css({"visibility":"hidden"});
+	        $(this).css({"display":"block"});
+	    });
 
-	iter--;
+		txtQuestion = "";	
+		rn = Math.floor(Math.random() * iter);
+		txtQuestion += words[rn][0];
 
-	if (iter == 0)
-	{
-		document.getElementById("nextButton").value = "Restart (RightArrow)";
-		alert("Last Word");
-	}
-	else
-	{
-		document.getElementById("nextButton").value = "Next Word (RightArrow)";
-	}
+		document.getElementById("divQuestion").style.display = "block";
+		document.getElementById("divQuestion").innerHTML = txtQuestion;
 
+		var tempArray = new Array(5);
+		for (i = 0; i < 5; i++)
+		{
+			tempArray[i] = words[rn][i];
+			words[rn][i] = words[iter - 1][i];
+			words[iter - 1][i] = tempArray[i];
+		}
+
+		iter--;
+
+		if (iter == 0)
+		{
+			document.getElementById("nextButton").value = "Restart (RightArrow)";
+			alert("Last Word");
+		}
+		else
+		{
+			document.getElementById("nextButton").value = "Next Word (RightArrow)";
+		}
+	}
 }
 
 function answer()
 {
-	txtAnswer = "";
-	txtAnswer += "<table border='1'>";
-	txtAnswer += "<tr><td>平假名</td><td>漢字</td><td>片假名</td><td>其他</td></tr>";
-	txtAnswer += "<tr><td>";
-	txtAnswer += words[iter][1];
-	txtAnswer += "</td><td>";
-	txtAnswer += words[iter][2];
-	txtAnswer += "</td><td>";
-	txtAnswer += words[iter][3];
-	txtAnswer += "</td><td>";
-	txtAnswer += words[iter][4];
-	txtAnswer += "</td></tr>";
 
-	txtAnswer += "</table>";
+	if (words.length && txtQuestion)
+	{
+		//alert($("#showAnswer").html());
+		if ($("#showAnswer span").text() == "Show Answer ")
+		{
+			//alert(1);
+			$("#showAnswer").html('<span>Close Answer <span class="glyphicon glyphicon-arrow-left"></span></span>');
+			$("#showAnswer").prop("class", "btn btn-default");
+		
+			txtAnswer = "";
+			txtAnswer += "<table class = 'table table-bordered table-hover table-striped'>";
+			txtAnswer += "<thead><tr><th>平假名</th><th>漢字</th><th>片假名</th><th>其他</th></tr></thead>";
+			txtAnswer += "<tbody><tr><td>";
+			txtAnswer += words[iter][1];
+			txtAnswer += "</td><td>";
+			txtAnswer += words[iter][2];
+			txtAnswer += "</td><td>";
+			txtAnswer += words[iter][3];
+			txtAnswer += "</td><td>";
+			txtAnswer += words[iter][4];
+			txtAnswer += "</td></tr></tbody>";
 
-	document.getElementById("myDiv3").innerHTML = txtAnswer;
-	document.getElementById("myDiv3").style.visibility = "visible";
+			txtAnswer += "</table>";
 
+			document.getElementById("divAnswer").innerHTML = txtAnswer;
+			document.getElementById("divAnswer").style.visibility = "visible";
+		}
+		else
+		{
+			$("#showAnswer").html('<span>Show Answer <span class="glyphicon glyphicon-arrow-left"></span></span>');
+			$("#showAnswer").prop("class", "btn btn-success");
+			document.getElementById("divAnswer").style.visibility = "hidden";
+		}
+	}
 }
 
 function listAll()
 {
 	txtListAll = "";
-	txtListAll += "<table border='1'>";
-	txtListAll += "<tr><td>中文</td><td>hiragana</td><td>kanji</td><td>katakana</td><td>option</td></tr>";
+	txtListAll += "<table class='table table-bordered table-hover table-striped'>";
+	txtListAll += "<thead><tr><th>chinese</th><th>hiragana</th><th>kanji</th><th>katakana</th><th>option</th></th></thead>";
 
+	txtListAll += "<tbody>"
 	for (i = 0; i < wordCollectionAll.length; i++)
 	{
 		txtListAll += "<tr><td>";
@@ -171,19 +268,36 @@ function listAll()
 		txtListAll += "</td></tr>";
 	}
 
+	txtListAll += "</tbody>"
 	txtListAll += "</table>";
 
-	document.getElementById("myDiv4").innerHTML = txtListAll;
-	document.getElementById("myDiv4").style.visibility = "visible";
-	document.getElementById("myDiv4").style.display = "inline";
+	document.getElementById("divListWord").innerHTML = txtListAll;
+	document.getElementById("divListWord").style.visibility = "visible";
+	document.getElementById("divListWord").style.display = "inline";
 }
 
 function closeList()
 {
-	document.getElementById("myDiv4").style.display = "none";
+	document.getElementById("divListWord").style.display = "none";
 }
 
+function toggleList()
+{
+	if ($("#toggleList span").text() == "List All Words")
+	{
+		listAll();
+		$("#toggleList span").text("Close List");
+		$("#toggleList").prop("class", "btn btn-default");
+	}
+	else
+	{
+		closeList();
+		$("#toggleList span").text("List All Words");
+		$("#toggleList").prop("class", "btn btn-primary");
+	}
+}
 
+/*
 document.onkeydown = function(event)
 {
 	var e = event || window.event;
@@ -197,44 +311,210 @@ document.onkeydown = function(event)
 		answer();
 	}
 }
+*/
 
+</script>    
 
-</script>
+<body role="document">
 
-<input type = "button" value = "Check All" onclick = "checkAll(document.formCheckbox.check)"></input>
-<input type = "button" value = "Uncheck All" onclick = "uncheckAll(document.formCheckbox.check)"></input>
+	<!-- Fixed navbar -->
+	<!--
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+	    	<div class="navbar-header">
+	      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	      		</button>
+	      		<a class="navbar-brand" href="#">Bootstrap theme</a>
+	    	</div>
+		    <div class="navbar-collapse collapse">
+		    	<ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Home</a></li>
+			        <li><a href="#about">About</a></li>
+			        <li><a href="#contact">Contact</a></li>
+			        <li class="dropdown">
+		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		            	<ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li class="divider"></li>
+				            <li class="dropdown-header">Nav header</li>
+				            <li><a href="#">Separated link</a></li>
+				            <li><a href="#">One more separated link</a></li>
+		          		</ul>
+		        	</li>
+		      </ul>
+		    </div><!--/.nav-collapse -->
+	<!--  	</div>
+	</div>
+-->
 
-<form name = "formCheckbox">
-<input type = "checkbox" id = "cb_L7" name = "check" value = "L7">L7</input>
-<input type = "checkbox" id = "cb_L8" name = "check" value = "L8">L8</input>
-<input type = "checkbox" id = "cb_L9" name = "check" value = "L9">L9</input>
-<input type = "checkbox" id = "cb_L10" name = "check" value = "L10">L10</input>
-<input type = "checkbox" id = "cb_L11" name = "check" value = "L11">L11(~No.34)</input><br>
-</form>
-<input type = "button" value = "Load" onclick = "loadXML()"></input>
-<div id = "loadStatus" style = "visibility:hidden">Loading Complete</div>
-<br />
-<hr />
+	<!-- Container -->
+    <div class="container theme-showcase" role="main">
 
-<div id = "myDiv"></div>
-<div id = "myDiv2"></div>
-<br />
-<div id = "myDiv3"></div>
-<input type = "button" id = "nextButton" value = "Next Word (RightArrow)" onclick = "nextWord()"></input>
-<input type = "button" id = "showAnswer" value = "Show Answer (DownArrow)" onclick = "answer()"></input>
-<br />
-<hr />
-<br />
-<input type = "button" id = "listAll" value = "List All Words" onclick = "listAll()"></input>
-<input type = "button" id = "closeList" value = "Close List" onclick = "closeList()"></input>
-<br>
-<div id = "myDiv4"></div>
+    	<!-- Main jumbotron for a primary marketing message or call to action -->
+      	<div class="jumbotron">
+        	<h1>Shuffle the Words!</h1>
+        	<p>Feel frustrated on memorizing Japanese words? Try to shuffle the words. This simple tool can help you recall the words on "Minna no Nihongo (1)". By mixing words from different lessons, you can easily improve the memorization both on the newly learned words and on the words you have learned before.</p>
+        	<p><a href="#start" class="btn btn-primary btn-lg" role="button">Start &raquo;</a></p>
+      	</div>
 
-<hr />
-<footer>
-<p>Edited by: kyletso</p>
-<p>Contact information: <a href="mailto:kyletso@gmail.com">kyletso@gmail.com</a>.</p>
-</footer>
+		<!-- Choose Lessons -->
+      	<div class="page-header" id="start">
+      		<h3>Choose the Lessons You Want to Practice <small>Multiple Choice</small></h3>
+      	</div>
+      	  
+      	<blockquote>
+  			<p>After Selecting the lessons, press the <span class="label label-default">Load</span> button.</p>
+		</blockquote>
+		
+		<!--
+		<div class="bs-callout bs-callout-info">
+			<p>After choosing the lessons, press the "Load" button.</p>
+		</div>
+		-->
+
+      	<div>
+      		<p>
+				<input type="button" value="Check All" class="btn btn-default" onclick="checkAll(document.formCheckbox.check)"></input>
+				<input type="button" value="Uncheck All" class="btn btn-default" onclick="uncheckAll(document.formCheckbox.check)"></input>
+	  		</p>
+		</div>
+		
+		<form name="formCheckbox">
+			<div>
+				<label class="checkbox-inline">
+					<input type="checkbox" id="cb_L7" name="check" value="L7">L7</input>
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" id="cb_L8" name="check" value="L8">L8</input>
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" id="cb_L9" name="check" value="L9">L9</input>
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" id="cb_L10" name="check" value="L10">L10</input>
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" id="cb_L11" name="check" value="L11">L11(~No.34)</input><br>
+				</label>	
+			</div>
+		</form>
+
+		<div>
+			<input type="button" value="Load" class="btn btn-primary" onclick="loadXML(document.formCheckbox.check)"></input>
+  		</div>
+
+		<p>
+			<div id="divLoadSuccess" style="display:none" class="alert alert-success">
+        		<strong>Loading Complete!</strong> Now you can press the "Next Word" button.
+			</div>
+			<div id="divLoadFail" style="display:none" class="alert alert-danger">
+        		<strong>Loading Failed!</strong> Please select at least one item.
+			</div>
+		</p>
+
+		<!-- Question and Answer -->
+      	<div class="page-header">
+      		<h3>Press the "Next Word" Button to Show Words Randomly</h3>
+      	</div>
+
+      	<blockquote>
+  			<p>
+  				You can also use keyboard hotkeys [<span class="glyphicon glyphicon-arrow-right"></span>] as the <span class="label label-default">Next Word</span> button.
+  				<br />
+				And [<span class="glyphicon glyphicon-arrow-left"></span>] as the <span class="label label-default">Show Answer</span> button or the <span class="label label-default">Close Answer</span> button.
+  			</p>
+		</blockquote>
+
+	  	<p>	
+			<div id="divQuestion" class="lead"></div>
+	  	</p>
+
+		<p>
+			<div id="divAnswer"></div>
+		</p>
+
+	  	<p>	
+			<button id="nextButton" class="btn btn-primary" onclick="nextWord()">
+				<span>Next Word <span class="glyphicon glyphicon-arrow-right"></span></span>
+			</button>
+			<button id="showAnswer" class="btn btn-success" onclick="answer()">
+				<span>Show Answer <span class="glyphicon glyphicon-arrow-left"></span></span>
+			</button>
+	  	</p>
+
+		<!-- List All Words -->
+      	<div class="page-header">
+      		<h3>Press the "List All Words" Button to Show All Loaded Words</h3>
+      	</div>
+	  	
+	  	<p>
+	  		<!--
+			<input type="button" id="listAll" value="List All Words" class="btn btn-primary" onclick="listAll()"></input>
+			<input type="button" id="closeList" value="Close List" class="btn btn-primary" onclick="closeList()"></input>
+			-->
+			<button id="toggleList" class="btn btn-primary" onclick="toggleList()">
+				<span>List All Words</span>
+			</button>
+	  	</p>
+		
+		<br>
+		
+		<div id="divListWord"></div>
+
+		<!-- About -->
+	  	<div class="page-header">
+        	<h3>About</h3>
+      	</div>
+      	
+      	<div class="well">
+			<footer>
+				<address>
+  					<strong>Edited by:</strong><br>
+  					kyletso
+				</address>
+				<address>
+  					<strong>Contact information:</strong><br>
+  					<a href="mailto:#">kyletso@gmail.com</a>
+				</address>
+			</footer>
+	  	</div>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Those JavaScript code which should be loaded after jQuery are placed here.  -->
+    <script type="text/javascript">
+		$(document).ready(function ()
+		{
+			$(document).keydown(function (e)
+			{
+				//alert(e.keyCode);
+				if (e && (e.which == '39'))	// 39 --> right arrow
+				{
+					//alert(e.keyCode);
+					nextWord();
+				}
+				if (e && (e.which == '37'))	// 37 --> left arrow
+				{
+					answer();
+				}
+			});
+		});
+    </script>
+    <!--
+    <script src="../../assets/js/docs.min.js"></script>
+	-->
 </body>
 
 </html>
