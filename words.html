@@ -360,7 +360,7 @@ document.onkeydown = function(event)
       	<div class="jumbotron">
         	<h1>Shuffle the Words!</h1>
         	<p>Feel frustrated on memorizing Japanese words? Try to shuffle the words. This simple tool can help you recall the words on "Minna no Nihongo (1)". By mixing words from different lessons, you can easily improve the memorization both on the newly learned words and on the words you have learned before.</p>
-        	<p><a href="#start" class="btn btn-primary btn-lg" role="button">Start &raquo;</a></p>
+        	<p><a href="#" class="btn btn-primary btn-lg btn-start" role="button">Start &raquo;</a></p>
       	</div>
 
 		<!-- Choose Lessons -->
@@ -475,6 +475,9 @@ document.onkeydown = function(event)
       	<div class="well">
 			<footer>
 				<address>
+					<a href='./old/words.html'>styleless version</a>
+				</address>
+				<address>
   					<strong>Edited by:</strong><br>
   					kyletso
 				</address>
@@ -484,6 +487,9 @@ document.onkeydown = function(event)
 				</address>
 			</footer>
 	  	</div>
+
+      <!-- Back-to-top button -->
+      <a href="#" class="btn back-to-top btn-light btn-fixed-bottom"> <span class="glyphicon glyphicon-chevron-up"></span> </a>
 
     </div> <!-- /container -->
 
@@ -497,6 +503,37 @@ document.onkeydown = function(event)
     <script type="text/javascript">
 		$(document).ready(function ()
 		{
+			var duration      = 420;
+			var showOffset    = 220;
+			var btnFixed      = '.btn-fixed-bottom';
+			var btnToTopClass = '.back-to-top';
+			var btnStart	  = '.btn-start';
+
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > showOffset) 
+				{
+			    	$(btnFixed).fadeIn(duration);
+			    } 
+			    else 
+			    {
+			    	$(btnFixed).fadeOut(duration);
+			    }
+			});
+
+			$(btnToTopClass).click(function (event) 
+			{
+			    event.preventDefault();
+			    $('html, body').animate({scrollTop: 0}, duration);
+			    return false;
+			});
+
+			$(btnStart).click(function (event)
+			{
+				event.preventDefault();
+				$('html, body').animate({scrollTop: $('#start').offset().top}, duration);
+				return false;
+			});
+
 			$(document).keydown(function (e)
 			{
 				//alert(e.keyCode);
@@ -510,6 +547,8 @@ document.onkeydown = function(event)
 					answer();
 				}
 			});
+
+
 		});
     </script>
     <!--
