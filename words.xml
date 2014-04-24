@@ -1801,5 +1801,215 @@
         <katakana> </katakana>
         <option> </option>
     </word>
+    <word>
+        <chinese>兄弟姊妹</chinese>
+        <hiragana>きょうだい</hiragana>
+        <kanji>兄弟</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(我) 哥哥</chinese>
+        <hiragana>あに</hiragana>
+        <kanji>兄</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(別人的) 哥哥</chinese>
+        <hiragana>おにいさん</hiragana>
+        <kanji>お兄さん</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(我) 姊姊</chinese>
+        <hiragana>あね</hiragana>
+        <kanji>姉</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(別人的) 姊姊</chinese>
+        <hiragana>おねえさん</hiragana>
+        <kanji>お姉さん</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(我) 弟弟</chinese>
+        <hiragana>おとうと</hiragana>
+        <kanji>弟</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(別人的) 弟弟</chinese>
+        <hiragana>おとうとさん</hiragana>
+        <kanji>弟さん</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(我) 妹妹</chinese>
+        <hiragana>いもうと</hiragana>
+        <kanji>妹</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>(別人的) 妹妹</chinese>
+        <hiragana>いもうとさん</hiragana>
+        <kanji>妹さん</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>外國</chinese>
+        <hiragana>がいこく</hiragana>
+        <kanji>外国</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>...小時</chinese>
+        <hiragana>...じかん</hiragana>
+        <kanji>...時間</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>...星期</chinese>
+        <hiragana>...しゅうかん</hiragana>
+        <kanji>...週間</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>...個月</chinese>
+        <hiragana>...かげつ</hiragana>
+        <kanji>...か月</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>...年</chinese>
+        <hiragana>...ねん</hiragana>
+        <kanji>...年</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>～左右</chinese>
+        <hiragana>～ぐらい</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>多久</chinese>
+        <hiragana>どのくらい</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>多貴，多長...</option>
+    </word>
+    <word>
+        <chinese>一共</chinese>
+        <hiragana>ぜんぶ(で)</hiragana>
+        <kanji>全部(で)</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>全部，全體</chinese>
+        <hiragana>みんな</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>只～，僅～</chinese>
+        <hiragana>～だけ</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>歡迎光臨</chinese>
+        <hiragana>いらっしゃいませ</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>(商店、行號在顧客光臨時用)</option>
+    </word>
+    <word>
+        <chinese>真是好天氣呀。</chinese>
+        <hiragana>いい　[お]てんきですね。</hiragana>
+        <kanji>いい　[お]天気ですね。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>您外出呀。</chinese>
+        <hiragana>おでかけですか。</hiragana>
+        <kanji>お出かけですか。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>我去一下～。</chinese>
+        <hiragana>ちょっと　～まで。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>您慢走 (會再回來)</chinese>
+        <hiragana>いって　(い)らっしゃい。</hiragana>
+        <kanji>行って　(い)らっしゃい。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>我走了 (會再回來)</chinese>
+        <hiragana>いって　まいります。</hiragana>
+        <kanji>行って　まいります。</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>還有，另外</chinese>
+        <hiragana>それから</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>澳洲</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>オーストラリア</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>我回來了</chinese>
+        <hiragana>ただいま</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>你回來了</chinese>
+        <hiragana>おかえりなさい</hiragana>
+        <kanji>お帰りなさい</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
+    <word>
+        <chinese>慢走(補充會話)</chinese>
+        <hiragana>いって　きます</hiragana>
+        <kanji>行って　きます</kanji>
+        <katakana> </katakana>
+        <option>(補充)</option>
+    </word>
 </L11>
 </AllLessons>
