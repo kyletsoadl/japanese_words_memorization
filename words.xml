@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AllLessons>
+<root>
 <L7>
 	  <word>
         <chinese>剪，切</chinese>
@@ -2012,4 +2012,85 @@
         <option>(補充)</option>
     </word>
 </L11>
-</AllLessons>
+<Appendix>
+    <Classifier>
+        <word category='hon'>
+            <chinese>細而長的東西 - 1</chinese>
+            <hiragana>いっぽん</hiragana>
+            <kanji>１本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 2</chinese>
+            <hiragana>にほん</hiragana>
+            <kanji>２本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 3</chinese>
+            <hiragana>さんぼん</hiragana>
+            <kanji>３本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 4</chinese>
+            <hiragana>よんほん</hiragana>
+            <kanji>４本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 5</chinese>
+            <hiragana>ごほん</hiragana>
+            <kanji>５本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 6</chinese>
+            <hiragana>ろっぽん</hiragana>
+            <kanji>６本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 7</chinese>
+            <hiragana>ななほん</hiragana>
+            <kanji>７本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 8</chinese>
+            <hiragana>はっぽん</hiragana>
+            <kanji>８本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 9</chinese>
+            <hiragana>きゅうほん</hiragana>
+            <kanji>９本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 10</chinese>
+            <hiragana>じゅっぽん、じっぽん</hiragana>
+            <kanji>１０本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='hon'>
+            <chinese>細而長的東西 - 幾</chinese>
+            <hiragana>なんぼん</hiragana>
+            <kanji>何本</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+    </Classifier>
+</Appendix>
+</root>
