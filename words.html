@@ -123,8 +123,13 @@ function loadXML(field)
 		}
 		if (document.getElementById("cb_hon").checked)
 		{
-			var wordHon = Array.prototype.slice.call(xmlDoc.querySelectorAll("Classifier word[category='hon']"));
+			var wordHon = Array.prototype.slice.call(xmlDoc.querySelectorAll('Classifier word[category="hon"]'));
 			wordCollectionAll = wordCollectionAll.concat(wordHon);
+		}
+		if (document.getElementById("cb_duration").checked)
+		{
+			var wordDuration = Array.prototype.slice.call(xmlDoc.querySelectorAll("Duration word"));
+			wordCollectionAll = wordCollectionAll.concat(wordDuration);
 		}
 
 		iter = wordCollectionAll.length;
@@ -409,12 +414,17 @@ document.onkeydown = function(event)
 				</label>
 				<label class="checkbox-inline">
 					<input type="checkbox" id="cb_hon" name="check" value="hon">量詞(部分)</input><br>
-				</label>		
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" id="cb_duration" name="check" value="duration">期間(部分)</input><br>
+				</label>				
 			</div>
 		</form>
 
 		<div>
-			<input type="button" value="Load" class="btn btn-primary" onclick="loadXML(document.formCheckbox.check)"></input>
+			<p>
+				<input type="button" value="Load" class="btn btn-primary" onclick="loadXML(document.formCheckbox.check)"></input>
+			</p>
   		</div>
 
 		<p>

@@ -2092,5 +2092,315 @@
             <option> </option>
         </word>
     </Classifier>
+    <Duration>
+        <word category='duration_hour'>
+            <chinese>期間 - 1個小時</chinese>
+            <hiragana>いちじかん</hiragana>
+            <kanji>１時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 2個小時</chinese>
+            <hiragana>にじかん</hiragana>
+            <kanji>２時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 3個小時</chinese>
+            <hiragana>さんじかん</hiragana>
+            <kanji>３時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 4個小時</chinese>
+            <hiragana>よじかん</hiragana>
+            <kanji>４時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 5個小時</chinese>
+            <hiragana>ごじかん</hiragana>
+            <kanji>５時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 6個小時</chinese>
+            <hiragana>ろくじかん</hiragana>
+            <kanji>６時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 7個小時</chinese>
+            <hiragana>ななじかん、しちじかん</hiragana>
+            <kanji>７時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 8個小時</chinese>
+            <hiragana>はちじかん</hiragana>
+            <kanji>８時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 9個小時</chinese>
+            <hiragana>くじかん</hiragana>
+            <kanji>９時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 10個小時</chinese>
+            <hiragana>じゅうじかん</hiragana>
+            <kanji>１０時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_hour'>
+            <chinese>期間 - 幾個小時?</chinese>
+            <hiragana>なんじかん</hiragana>
+            <kanji>何時間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 1個星期</chinese>
+            <hiragana>いっしゅうかん</hiragana>
+            <kanji>１週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 2個星期</chinese>
+            <hiragana>にしゅうかん</hiragana>
+            <kanji>２週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 3個星期</chinese>
+            <hiragana>さんしゅうかん</hiragana>
+            <kanji>３週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 4個星期</chinese>
+            <hiragana>よんしゅうかん</hiragana>
+            <kanji>４週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 5個星期</chinese>
+            <hiragana>ごしゅうかん</hiragana>
+            <kanji>５週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 6個星期</chinese>
+            <hiragana>ろくしゅうかん</hiragana>
+            <kanji>６週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 7個星期</chinese>
+            <hiragana>ななしゅうかん、しちしゅうかん</hiragana>
+            <kanji>７週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 8個星期</chinese>
+            <hiragana>はっしゅうかん</hiragana>
+            <kanji>８週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 9個星期</chinese>
+            <hiragana>きゅうしゅうかん</hiragana>
+            <kanji>９週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 10個星期</chinese>
+            <hiragana>じゅっしゅうかん、じっしゅうかん</hiragana>
+            <kanji>１０週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_week'>
+            <chinese>期間 - 幾個星期?</chinese>
+            <hiragana>なんしゅうかん</hiragana>
+            <kanji>何週間</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 1個月</chinese>
+            <hiragana>いっかげつ</hiragana>
+            <kanji>１か月</kanji>
+            <katakana> </katakana>
+            <option>１ヶ月(いっかげつ)</option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 2個月</chinese>
+            <hiragana>にかげつ</hiragana>
+            <kanji>２か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 3個月</chinese>
+            <hiragana>さんかげつ</hiragana>
+            <kanji>３か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 4個月</chinese>
+            <hiragana>よんかげつ</hiragana>
+            <kanji>４か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 5個月</chinese>
+            <hiragana>ごかげつ</hiragana>
+            <kanji>５か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 6個月</chinese>
+            <hiragana>ろっかげつ</hiragana>
+            <kanji>６か月</kanji>
+            <katakana> </katakana>
+            <option>半年(はんとし)</option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 7個月</chinese>
+            <hiragana>ななかげつ、しちかげつ</hiragana>
+            <kanji>７か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 8個月</chinese>
+            <hiragana>はちかげつ、はっかげつ</hiragana>
+            <kanji>８か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 9個月</chinese>
+            <hiragana>きゅうかげつ</hiragana>
+            <kanji>９か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 10個月</chinese>
+            <hiragana>じゅっかげつ、じっかげつ</hiragana>
+            <kanji>１０か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_moon'>
+            <chinese>期間 - 幾個月?</chinese>
+            <hiragana>なんかげつ</hiragana>
+            <kanji>何か月</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 1年</chinese>
+            <hiragana>いちねん</hiragana>
+            <kanji>１年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 2年</chinese>
+            <hiragana>にねん</hiragana>
+            <kanji>２年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 3年</chinese>
+            <hiragana>さんねん</hiragana>
+            <kanji>３年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 4年</chinese>
+            <hiragana>よねん</hiragana>
+            <kanji>４年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 5年</chinese>
+            <hiragana>ごねん</hiragana>
+            <kanji>５年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 6年</chinese>
+            <hiragana>ろくねん</hiragana>
+            <kanji>６年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 7年</chinese>
+            <hiragana>ななねん、しちねん</hiragana>
+            <kanji>７年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 8年</chinese>
+            <hiragana>はちねん</hiragana>
+            <kanji>８年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 9年</chinese>
+            <hiragana>きゅうねん、くねん</hiragana>
+            <kanji>９年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 10年</chinese>
+            <hiragana>じゅうねん</hiragana>
+            <kanji>１０年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+        <word category='duration_year'>
+            <chinese>期間 - 幾年?</chinese>
+            <hiragana>なんねん</hiragana>
+            <kanji>何年</kanji>
+            <katakana> </katakana>
+            <option> </option>
+        </word>
+    </Duration>
 </Appendix>
 </root>
