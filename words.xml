@@ -2012,6 +2012,344 @@
         <option>(補充)</option>
     </word>
 </L11>
+<L12>
+    <word>
+        <chinese>簡單的，單純的</chinese>
+        <hiragana>かんたん[な]</hiragana>
+        <kanji>簡単[な]</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>近的</chinese>
+        <hiragana>ちかい</hiragana>
+        <kanji>近い</kanji>
+        <katakana> </katakana>
+        <option>(n.)近く</option>
+    </word>
+    <word>
+        <chinese>遠的</chinese>
+        <hiragana>とおい</hiragana>
+        <kanji>遠い</kanji>
+        <katakana> </katakana>
+        <option>(n.)遠く</option>
+    </word>
+    <word>
+        <chinese>快的，早的</chinese>
+        <hiragana>はやい</hiragana>
+        <kanji>(速い、早い)</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>慢的，晚的</chinese>
+        <hiragana>おそい</hiragana>
+        <kanji>遅い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>多的，[人]多的</chinese>
+        <hiragana>[ひとが～]おおい</hiragana>
+        <kanji>[人が～]多い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>少的，[人]少的</chinese>
+        <hiragana>[ひとが～]すくない</hiragana>
+        <kanji>[人が～]少ない</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>溫暖的，溫熱的</chinese>
+        <hiragana>あたたかい</hiragana>
+        <kanji>(暖かい、温かい)</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>涼的</chinese>
+        <hiragana>すずしい</hiragana>
+        <kanji>涼しい</kanji>
+        <katakana> </katakana>
+        <option>舒服的</option>
+    </word>
+    <word>
+        <chinese>甜的</chinese>
+        <hiragana>あまい</hiragana>
+        <kanji>甘い</kanji>
+        <katakana> </katakana>
+        <option>天真的</option>
+    </word>
+    <word>
+        <chinese>辣的，鹹的</chinese>
+        <hiragana>からい</hiragana>
+        <kanji>辛い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>重的</chinese>
+        <hiragana>おもい</hiragana>
+        <kanji>重い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>輕的</chinese>
+        <hiragana>かるい</hiragana>
+        <kanji>軽い</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>好的，好的[咖啡]</chinese>
+        <hiragana>[コーヒーが～]いい</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>季節</chinese>
+        <hiragana>きせつ</hiragana>
+        <kanji>季節</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>春</chinese>
+        <hiragana>はる</hiragana>
+        <kanji>春</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>夏</chinese>
+        <hiragana>なつ</hiragana>
+        <kanji>夏</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>秋</chinese>
+        <hiragana>あき</hiragana>
+        <kanji>秋</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>冬</chinese>
+        <hiragana>ふゆ</hiragana>
+        <kanji>冬</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>天氣</chinese>
+        <hiragana>てんき</hiragana>
+        <kanji>天気</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>雨，下雨</chinese>
+        <hiragana>あめ</hiragana>
+        <kanji>雨</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>雪，下雪</chinese>
+        <hiragana>ゆき</hiragana>
+        <kanji>雪</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>陰天</chinese>
+        <hiragana>くもり</hiragana>
+        <kanji>曇り</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>飯店，旅館</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ホテル</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>機場</chinese>
+        <hiragana>くうこう</hiragana>
+        <kanji>空港</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>海</chinese>
+        <hiragana>うみ</hiragana>
+        <kanji>海</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>世界</chinese>
+        <hiragana>せかい</hiragana>
+        <kanji>世界</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>舞會，宴會</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>パーティー</katakana>
+        <option>(～を　します：辦舞會)</option>
+    </word>
+    <word>
+        <chinese>節慶，慶典</chinese>
+        <hiragana>[お]まつり</hiragana>
+        <kanji>[お]祭り</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>考試</chinese>
+        <hiragana>しけん</hiragana>
+        <kanji>試験</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>壽喜燒</chinese>
+        <hiragana>すきやき</hiragana>
+        <kanji>すき焼き</kanji>
+        <katakana> </katakana>
+        <option>(牛肉和蔬菜的火鍋)</option>
+    </word>
+    <word>
+        <chinese>生魚片</chinese>
+        <hiragana>[お]さしみ</hiragana>
+        <kanji>[お]刺身</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>壽司</chinese>
+        <hiragana>[お]すし</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>天麩羅，炸蝦</chinese>
+        <hiragana>てんぷら</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>花道，插花</chinese>
+        <hiragana>いけばな</hiragana>
+        <kanji>生け花</kanji>
+        <katakana> </katakana>
+        <option>(～を　します：插花)</option>
+    </word>
+    <word>
+        <chinese>紅葉</chinese>
+        <hiragana>もみじ</hiragana>
+        <kanji>紅葉</kanji>
+        <katakana> </katakana>
+        <option>(秋天的各種變色葉)</option>
+    </word>
+    <word>
+        <chinese>哪邊(自二者選一)</chinese>
+        <hiragana>どちら</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>二者都</chinese>
+        <hiragana>どちらも</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>～得多，～得很，一直</chinese>
+        <hiragana>ずっと～</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>第一次，初次</chinese>
+        <hiragana>はじめて</hiragana>
+        <kanji>初めて</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>我回來了。</chinese>
+        <hiragana>ただいま。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>你回來啦。</chinese>
+        <hiragana>おかえりなさい</hiragana>
+        <kanji>お帰りなさい</kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>真是了不起呀。</chinese>
+        <hiragana>すごいですね。</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>然而，不過</chinese>
+        <hiragana>でも</hiragana>
+        <kanji> </kanji>
+        <katakana> </katakana>
+        <option>＝しかし</option>
+    </word>
+    <word>
+        <chinese>(我)累了。</chinese>
+        <hiragana>つかれました。</hiragana>
+        <kanji>疲れました</kanji>
+        <katakana> </katakana>
+        <option>疲れる</option>
+    </word>
+    <word>
+        <chinese>祇園祭</chinese>
+        <hiragana>ぎおんまつり</hiragana>
+        <kanji>祇園祭</kanji>
+        <katakana> </katakana>
+        <option>(京都的慶典活動)</option>
+    </word>
+    <word>
+        <chinese>香港</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>ホンコン</katakana>
+        <option> </option>
+    </word>
+    <word>
+        <chinese>新加坡</chinese>
+        <hiragana> </hiragana>
+        <kanji> </kanji>
+        <katakana>シンガポール</katakana>
+        <option> </option>
+    </word>
+</L12>
 <Appendix>
     <Classifier>
         <word category='hon'>
