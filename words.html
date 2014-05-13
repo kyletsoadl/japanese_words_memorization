@@ -126,6 +126,11 @@ function loadXML(field)
 			var wordL12 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L12 word'));
 			wordCollectionAll = wordCollectionAll.concat(wordL12);
 		}
+		if (document.getElementById("cb_L13").checked)
+		{
+			var wordL13 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L13 word'));
+			wordCollectionAll = wordCollectionAll.concat(wordL13);
+		}
 		if (document.getElementById("cb_hon").checked)
 		{
 			var wordHon = Array.prototype.slice.call(xmlDoc.querySelectorAll('Classifier word[category="hon"]'));
@@ -419,6 +424,9 @@ document.onkeydown = function(event)
 				</label>
 				<label class="checkbox-inline">
 					<input type="checkbox" id="cb_L12" name="check" value="L12">L12</input><br>
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" id="cb_L13" name="check" value="L13">L13</input><br>
 				</label>
 				<label class="checkbox-inline">
 					<input type="checkbox" id="cb_hon" name="check" value="hon">量詞(部分)</input><br>
