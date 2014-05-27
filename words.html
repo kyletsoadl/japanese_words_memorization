@@ -131,6 +131,11 @@ function loadXML(field)
 			var wordL13 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L13 word'));
 			wordCollectionAll = wordCollectionAll.concat(wordL13);
 		}
+		if (document.getElementById("cb_L14").checked)
+		{
+			var wordL14 = Array.prototype.slice.call(xmlDoc.querySelectorAll('L14 word'));
+			wordCollectionAll = wordCollectionAll.concat(wordL14);
+		}
 		if (document.getElementById("cb_hon").checked)
 		{
 			var wordHon = Array.prototype.slice.call(xmlDoc.querySelectorAll('Classifier word[category="hon"]'));
@@ -146,16 +151,34 @@ function loadXML(field)
 
 		for (i = 0; i < wordCollectionAll.length; i++)
 		{
-			words[i] = new Array(5);
+			//words[i] = new Array(5);
+
+			// declare a 5-element array for each word[i] (i.e. two-dimension array), initial value ' '
+			words[i] = Array.apply(null, Array(5)).map(function() { return ' ' });
 		}
 
 		for (i = 0; i < wordCollectionAll.length; i++)
 		{
-			words[i][0] = wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
-			words[i][1] = wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes[0].nodeValue;
-			words[i][2] = wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes[0].nodeValue;
-			words[i][3] = wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
-			words[i][4] = wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
+			if (wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes.length != 0)
+			{
+				words[i][0] = wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
+			}
+			if (wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes.length != 0)
+			{
+				words[i][1] = wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes[0].nodeValue;
+			}
+			if (wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes.length != 0)
+			{
+				words[i][2] = wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes[0].nodeValue;
+			}
+			if (wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes.length != 0)
+			{
+				words[i][3] = wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
+			}
+			if (wordCollectionAll[i].getElementsByTagName("option")[0].childNodes.length != 0)
+			{
+				words[i][4] = wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
+			}
 		}
 
 		document.getElementById("divLoadFail").style.display = "none";
@@ -276,15 +299,30 @@ function listAll()
 	for (i = 0; i < wordCollectionAll.length; i++)
 	{
 		txtListAll += "<tr><td>";
-		txtListAll += wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
+		if (wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes.length != 0)
+		{
+			txtListAll += wordCollectionAll[i].getElementsByTagName("chinese")[0].childNodes[0].nodeValue;
+		}
 		txtListAll += "</td><td>";
-		txtListAll += wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes[0].nodeValue;
+		if (wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes.length != 0)
+		{
+			txtListAll += wordCollectionAll[i].getElementsByTagName("hiragana")[0].childNodes[0].nodeValue;
+		}
 		txtListAll += "</td><td>";
-		txtListAll += wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes[0].nodeValue;
+		if (wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes.length != 0)
+		{
+			txtListAll += wordCollectionAll[i].getElementsByTagName("kanji")[0].childNodes[0].nodeValue;
+		}
 		txtListAll += "</td><td>";
-		txtListAll += wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
+		if (wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes.length != 0)
+		{
+			txtListAll += wordCollectionAll[i].getElementsByTagName("katakana")[0].childNodes[0].nodeValue;
+		}
 		txtListAll += "</td><td>";
-		txtListAll += wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
+		if (wordCollectionAll[i].getElementsByTagName("option")[0].childNodes.length != 0)
+		{
+			txtListAll += wordCollectionAll[i].getElementsByTagName("option")[0].childNodes[0].nodeValue;
+		}
 		txtListAll += "</td></tr>";
 	}
 
@@ -427,6 +465,9 @@ document.onkeydown = function(event)
 				</label>
 				<label class="checkbox-inline">
 					<input type="checkbox" id="cb_L13" name="check" value="L13">L13</input><br>
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" id="cb_L14" name="check" value="L14">L14(~No.18)</input><br>
 				</label>
 				<label class="checkbox-inline">
 					<input type="checkbox" id="cb_hon" name="check" value="hon">量詞(部分)</input><br>
